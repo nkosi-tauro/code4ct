@@ -166,7 +166,6 @@ body, html {
   height: 350px;
   margin-left: 5px;
   text-align: center;
-  border: 1px solid #ddd6d6;
   color: white;
 }
 
@@ -176,7 +175,6 @@ body, html {
   height: 350px;
   margin-left: 50%;
   text-align: center;
-  border: 1px solid #2a1bb1;
   color: white;
 }
 
@@ -186,7 +184,6 @@ body, html {
   height: 350px;
   margin-left: 25%;
   text-align: center;
-  border: 1px solid #14af14;
   color: white;
 }
 
@@ -196,8 +193,68 @@ body, html {
   height: 350px;
   margin-left: 75%;
   text-align: center;
-  border: 1px solid #ac1b1b;
   color: white;
+}
+
+.port-des {
+  margin-top: 70px;
+  margin-left: 15%;
+  width: 700px;
+  height: 100px;
+  font-size: 1rem;
+}
+
+.port-img {
+  margin-top: 40px;
+  margin-left: 15%;
+  width: 950px;
+  height: 470px;
+  border: 1px solid #ac1b1b;
+}
+
+.port-img1 {
+  width: 290px;
+  height: 220px;
+  border: 1px solid black;
+}
+
+.port-img2 {
+  width: 290px;
+  height: 220px;
+  border: 1px solid black;
+  margin-top: 28px;
+}
+
+.port-img3 {
+  width: 290px;
+  height: 220px;
+  border: 1px solid black;
+  margin-left: 33%;
+  margin-top: -49.8%;
+}
+
+.port-img4 {
+  width: 290px;
+  height: 220px;
+  border: 1px solid black;
+  margin-left: 33%;
+  margin-top: 28px;
+}
+
+.port-img5 {
+  width: 320px;
+  height: 470px;
+  border: 1px solid black;
+  margin-left: 66%;
+  margin-top: -49.8%;
+}
+
+.team {
+  margin-top: 70px;
+  margin-left: 15%;
+  width: 700px;
+  height: 100px;
+  font-size: 1rem;
 }
 
 #back-to-top {

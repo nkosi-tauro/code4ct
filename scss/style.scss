@@ -5,7 +5,22 @@ body,html{
     padding: 0;
     font-family: 'Varela Round', sans-serif;
 }
-
+/////////////////////////////////////MIXINS///////////////////////////////////////////////////////////////////////
+@mixin port-img-dimensions{
+  width: 290px;
+  height: 220px;
+}
+@mixin about-img-dimensions{
+width: 290px;
+height: 240px;
+}
+@mixin position{  ///positioning for portfolio and team sections
+  margin-top: 70px;
+  margin-left: 15%;
+  width: 700px;
+  height: 100px;
+  font-size: 1rem;
+}
 ///////////////////////////////////////////////////////////NAVIGATION/////////////////////////////////////////////////////////////
 #navigation-container {
  
@@ -125,7 +140,6 @@ padding: 0;
     // border: 1px solid black;
     margin-top: 5%;
     margin-left: 13%;
-    // text-align: center;
     font-size: 1.5rem;
   }
 .images{
@@ -136,23 +150,20 @@ padding: 0;
     //  border: 1px solid black;
 }
 .img1{
-width: 290px;
-height: 240px;
+  @include about-img-dimensions;
 // border: 1px solid black;
 background-image: url("../images/about1.jpg");
 background-size: cover;
 }
 .img2{
-  width: 290px;
-  height: 240px;
+  @include about-img-dimensions;
   // border: 1px solid black;
   margin-top: 14px;
   background-image: url("../images/about2.jpg");
   background-size: cover;
   }
   .img3{
-    width: 290px;
-    height: 240px;
+    @include about-img-dimensions;
     // border: 1px solid black;
     margin-top: -82.3%;
     margin-left: 51%;
@@ -160,8 +171,7 @@ background-size: cover;
     background-size: cover;
   }
   .img4{
-    width: 290px;
-    height: 240px;
+    @include about-img-dimensions;
     // border: 1px solid black;
     margin-top: 14px;
     margin-left: 51%;
@@ -180,7 +190,7 @@ background-size: cover;
     height: 350px;
     margin-left: 5px;
     text-align: center;
-    border: 1px solid rgb(221, 214, 214);
+    // border: 1px solid rgb(221, 214, 214);
     color: white;
   }
 .communication{
@@ -189,7 +199,7 @@ background-size: cover;
   height: 350px;
   margin-left: 50%;
   text-align: center;
-  border: 1px solid rgb(42, 27, 177);
+  // border: 1px solid rgb(42, 27, 177);
   color: white;
 }
 .problem-solving{
@@ -198,7 +208,7 @@ background-size: cover;
   height: 350px;
   margin-left: 25%;
   text-align: center;
-  border: 1px solid rgb(20, 175, 20);
+  // border: 1px solid rgb(20, 175, 20);
   color: white;
 }
 .career-guidance{
@@ -207,9 +217,59 @@ background-size: cover;
   height: 350px;
   margin-left: 75%;
   text-align: center;
-  border: 1px solid rgb(172, 27, 27);
+  // border: 1px solid rgb(172, 27, 27);
   color: white;
 }
+
+
+
+///////////////////////////////////////////////PORFOLIO DESCRIPTION/////////////////
+.port-des{
+@include position;
+}
+.port-img{
+  margin-top: 40px;
+  margin-left: 15%;
+  width: 950px;
+  height: 470px;
+  border: 1px solid rgb(172, 27, 27);
+}
+.port-img1{
+  @include port-img-dimensions;
+  border: 1px solid black;
+
+}
+.port-img2{
+ @include port-img-dimensions;
+  border: 1px solid black;
+  margin-top:28px 
+}
+.port-img3{
+ @include port-img-dimensions;
+  border: 1px solid black;
+  margin-left: 33%;
+  margin-top: -49.8%;
+}
+.port-img4{
+ @include port-img-dimensions;
+  border: 1px solid black;
+  margin-left: 33%;
+  margin-top:28px 
+}
+.port-img5{
+  width: 320px;
+  height: 470px;
+  border: 1px solid black;
+  margin-left: 66%;
+  margin-top:-49.8%
+}
+// ////////////////////////////////////////////////TEAM SECTION///////////////////
+
+.team{
+  @include position;
+
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////SCROLL TO TOP ICON/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #back-to-top {
