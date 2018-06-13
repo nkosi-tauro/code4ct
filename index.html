@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Code4ct</title>
+    <link rel="icon" href="images/Favicon_Code4CT-150x150.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="js/main.js"></script>
+</head>
+<body>
+        
+
+     <div class="navigation-bar">
+        <div id="navigation-container ">
+          <a href="index.html"><img src="images/code4ct-logo.jpg"></a>
+          
+          <nav id="menu" role="navigation">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+          <div class=" wrap">       
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="search...">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search" style="color:red"></i>
+                  </button>
+                </div>
+             </div>
+        </div>
+    </div>
+    <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+    <!-- //////////////////////////////////////////////////////////////////HERO SECTION -->
+            <section id="hero">
+                <div class="hero">
+                </div>
+            </section>
+
+
+            <!-- About us -->
+            <div class="description">
+                <h2>About Us</h2>
+                <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
+                <button>Read More</button>
+                <div class="images">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                    <div class="img4"></div>
+                </div>
+            </div>
+            
+            <!-- STATS -->
+            <section >
+                <div class="stats">
+                    <div class="coding"><i class="fas fa-tv fa-6x" style="color: pink;"></i>
+                    <h2>Coding</h2><p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p></div>
+                    <!--  -->
+                    <div class="communication"><i class="far fa-volume-up fa-6x"  style="color: pink;"></i><h2>Communication</h2><p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p></div>
+                    <!--  -->
+                    <div class="problem-solving"><i class="fas fa-wrench fa-6x" style="color: pink;"></i><h2>Problem Solving</h2><p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process..</p></div>
+                    <!--  -->
+                    <div class="career-guidance"><i class="far fa-copy fa-6x" style="color: pink;"></i><h2>Career Guidance</h2><p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process..</p></div>
+                </div>
+            </section>
+
+            <p>gfdgd</p>
+
+
+
+
+
+
+                  
+ 
+
+            <script>
+               if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+            
+            // </script>
+                <script>
+  $('button[data-toggle="collapse"]').click( function () {
+  $('.nav').toggleClass('collapse');
+});
+                </script>
+</body>
+</html>

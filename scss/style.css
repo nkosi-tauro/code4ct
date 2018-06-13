@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#navigation-container {
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-bar {
+  background-color: #fdfdfd;
+  height: 70px;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 1px;
+  z-index: 999;
+}
+
+.navigation-bar img {
+  position: absolute;
+  top: 0;
+  left: 4%;
+}
+
+.navigation-bar ul {
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 15px;
+  height: 24px;
+  margin-top: 10%;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 70px;
+}
+
+.navigation-bar .active {
+  color: #f7143a;
+}
+
+.search {
+  width: 50%;
+  position: absolute;
+  margin-top: -70%;
+  margin-left: 140%;
+  position: sticky;
+  top: 30px;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 1px solid #adacac;
+  padding: 15px;
+  height: 0.9px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #0e0f0f;
+}
+
+.searchButton {
+  position: absolute;
+  right: -40px;
+  width: 40px;
+  height: 32px;
+  border: 1px solid #adacac;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #111111;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
+  background-image: url("../images/code4ct-homepage.jpg");
+  background-size: cover;
+  height: 90vh;
+  padding: 0;
+}
+
+.description {
+  width: 500px;
+  height: 300px;
+  margin-top: 5%;
+  margin-left: 13%;
+  font-size: 1.5rem;
+}
+
+.images {
+  width: 600px;
+  height: 500px;
+  margin-top: -90%;
+  margin-left: 110%;
+}
+
+.img1 {
+  width: 290px;
+  height: 240px;
+  background-image: url("../images/about1.jpg");
+  background-size: cover;
+}
+
+.img2 {
+  width: 290px;
+  height: 240px;
+  margin-top: 14px;
+  background-image: url("../images/about2.jpg");
+  background-size: cover;
+}
+
+.img3 {
+  width: 290px;
+  height: 240px;
+  margin-top: -82.3%;
+  margin-left: 51%;
+  background-image: url("../images/about3.jpg");
+  background-size: cover;
+}
+
+.img4 {
+  width: 290px;
+  height: 240px;
+  margin-top: 14px;
+  margin-left: 51%;
+  background-image: url("../images/about5.jpg");
+  background-size: cover;
+}
+
+.stats {
+  background-color: #030303;
+}
+
+.coding {
+  margin-top: 21%;
+  width: 370px;
+  height: 350px;
+  margin-left: 5px;
+  text-align: center;
+  border: 1px solid #ddd6d6;
+  color: white;
+}
+
+.communication {
+  margin-top: -21%;
+  width: 370px;
+  height: 350px;
+  margin-left: 50%;
+  text-align: center;
+  border: 1px solid #2a1bb1;
+  color: white;
+}
+
+.problem-solving {
+  margin-top: -22%;
+  width: 370px;
+  height: 350px;
+  margin-left: 25%;
+  text-align: center;
+  border: 1px solid #14af14;
+  color: white;
+}
+
+.career-guidance {
+  margin-top: -22%;
+  width: 370px;
+  height: 350px;
+  margin-left: 75%;
+  text-align: center;
+  border: 1px solid #ac1b1b;
+  color: white;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #1f1e1e;
+  color: #fffbfb;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+#back-to-top:hover {
+  background: #7c1065;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+  animation: pulse 2s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.pulse {
+  --color: #f71485;
+  --hover: #f74d14;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
