@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body,html{
     margin: 0;
@@ -20,6 +21,15 @@ height: 240px;
   width: 700px;
   height: 100px;
   font-size: 1rem;
+}
+@mixin team-box-position{
+  width: 230px;
+  height: 230px;
+}
+@mixin stat2-box-size{
+  width: 373px;
+  height: 390px;
+  margin-top: -25.9%;
 }
 ///////////////////////////////////////////////////////////NAVIGATION/////////////////////////////////////////////////////////////
 #navigation-container {
@@ -55,8 +65,6 @@ left:4%;
 .navigation-bar li {
   list-style-type: none;
   padding: 15px;
-  height: 24px;
-  margin-top: 10%;
   display: inline;
 }
 
@@ -267,9 +275,115 @@ background-size: cover;
 
 .team{
   @include position;
+}
+.team1{
+  @include position;
+  @include team-box-position;;
+  border: 1px transparent;
+  background-image: url(../images/Emma.png);
+  background-size: cover;
 
 }
+.team1-des{
+  @include team-box-position;
+  border: 1px transparent;
+  margin-left: 31.3%;
+  margin-top: -15.3%;
+  font-size: 0.85em;
+}
+.team2{
+  @include position;
+  @include team-box-position;;
+  border: 1px transparent;
+  background-image: url(../images/Andz.png);
+  background-size: cover;
+  margin-top: 3%;
+}
+.team2-des{
+  @include team-box-position;
+  border: 1px transparent;
+  margin-left: 31.3%;
+  margin-top: -15.3%;
+  font-size: 0.85em;
+}
+.team3{
+  @include team-box-position;;
+  border: 1px transparent;
+  background-image: url(../images/Tegan.png);
+  background-size: cover;
+  margin-top: -35.6%;
+  margin-left: 50%;
+}
+.team3-des{
+  @include team-box-position;;
+  margin-left: 66.5%;
+  font-size: 0.85em;
+  border: 1px transparent;
+  margin-top: -15.3%
+}
+.team4{
+  @include team-box-position;;
+  background-image: url(../images/Tracy.png);
+  background-size: cover;
+  margin-top: 3%;
+  margin-left: 50%;
+  border: 1px transparent;
+}
+.team4-des{
+  @include team-box-position;;
+  margin-left: 66.5%;
+  font-size: 0.85em;
+  border: 1px transparent;
+  margin-top: -15.3%
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////STATS 2 SECTION///////////////////
 
+.stats2{
+  margin-top: 90px;
+  width: 1515px;
+  height:390px;
+  border: #030303 1px solid;
+  background-color: #000000;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+.cups{
+  width: 378.78px;
+  height: 390px;
+  border: #f1dfdf 1px solid;
+  text-align: center;
+       i {
+        margin-top: 30%;
+        }
+}
+.nogirl{
+  border: #a51e1e 1px solid;
+  margin-left: 25.4%;
+  @include  stat2-box-size;
+  text-align: center;
+  i {
+    margin-top: 30%;
+    }
+}
+.projects{
+  @include  stat2-box-size;
+  border: #201ea5 1px solid;
+  margin-left: 50.2%;
+  text-align: center;
+  i {
+    margin-top: 30%;
+    }
+}
+.hours{
+  border: #1ea535 1px solid;
+  @include  stat2-box-size;
+  margin-left: 75.3%;
+  text-align: center;
+  i {
+    margin-top: 30%;
+    }
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////SCROLL TO TOP ICON/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #back-to-top {

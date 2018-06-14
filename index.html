@@ -62,7 +62,7 @@
             <!-- STATS -->
             <section >
                 <div class="stats">
-                    <div class="coding"><i class="fas fa-tv fa-6x" style="color: pink;"></i>
+                    <div class="coding"><i class="fas fa-tv fa-6x" style="color: rgb(216, 81, 153);"></i>
                     <h2>Coding</h2><p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p></div>
                     <!--  -->
                     <div class="communication"><i class="far fa-volume-up fa-6x"  style="color: pink;"></i><h2>Communication</h2><p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p></div>
@@ -89,16 +89,30 @@
             <!-- TEAM SECTION -->
             <section>
                <div class="team">
-                    <h1>The Team</h1><p>ngfc</p>
+                    <h1>The Team</h1><p></p>
                </div>
                <div class="team-des">
                    <div class="team1"></div>
+                   <div class="team1-des"><h2>Emma Dicks</h2><h4>Founder and Director</h4><p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p></div>
                    <div class="team2"></div>
+                   <div class="team2-des"><h2>Andrea Petersen</h2><h4>Operations Lead</h4><p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact</p></div>
                    <div class="team3"></div>
+                   <div class="team3-des"><h2>Tegan Crous</h2><h4>Program Lead</h4><p>Tegan heads up the high school program.
+                        She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p></div>
                    <div class="team4"></div>
+                   <div class="team4-des"><h2>Tracy-Anne Sikenjana</h2><h4>Leadership Program Coordinator</h4><p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development. </p></div>
                </div>
             </section>
-       
+
+            <!-- STATS 2 SECTION -->
+            <section>
+                <div class="stats2"  id="counter">
+                    <div class="cups " ><i class="fas fa-coffee fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="3000"></p><p>Cups of coffee</p></div>
+                    <div class="nogirl" ><i class="fas fa-female fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="780"></p><p>Number Of Girls</p></div>
+                    <div class="projects " ><i class="fas fa-clipboard-list fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="3120"></p><p>Projects completed</p></div>
+                    <div class="hours" ><i class="fas fa-hourglass-start fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="8760"></p><p> Hours of coding</p></div>
+                </div>
+            </section>
 
 
 
@@ -133,8 +147,37 @@
             
             // </script>
                 <script>
-  $('button[data-toggle="collapse"]').click( function () {
-  $('.nav').toggleClass('collapse');
+var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 6000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
 });
                 </script>
 </body>
