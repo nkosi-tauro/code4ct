@@ -15,7 +15,6 @@ body, html {
 .navigation-bar {
   background-color: #fdfdfd;
   height: 70px;
-  width: 100%;
   text-align: center;
   padding: 20px;
   position: sticky;
@@ -698,6 +697,40 @@ i {
 .header-contact a {
   text-decoration: none;
   color: black;
+}
+
+.form-section {
+  margin-top: 50px;
+  width: 1514px;
+  height: 600px;
+  border: #000000 1px solid;
+}
+
+.form-section .form-block {
+  border: #fff 1px solid;
+  height: 600px;
+  width: 1000px;
+}
+
+.form-section .contact-details {
+  width: 514px;
+  height: 600px;
+  border: #fff 1px solid;
+  margin-top: -40%;
+  margin-left: 66%;
+}
+
+.form-section .contact-details h1, .form-section .contact-details p {
+  margin-left: 40px;
+}
+
+.form-section .contact-details li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.mp-section {
+  margin-top: 50px;
 }
 
 .header-portfolio {

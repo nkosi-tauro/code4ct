@@ -53,7 +53,7 @@ height: 240px;
 .navigation-bar {
   background-color: rgb(253, 253, 253);
   height: 70px;
-  width: 100%;
+  // width: 100%;
   text-align:center;
   padding: 20px;
   position: sticky;
@@ -653,8 +653,35 @@ i{
 .header-contact{
   @include header;
 }
+.form-section{
+  margin-top: 50px;
+  width: 1514px;
+  height: 600px;
+  border: #000000 1px solid;
+  .form-block{
+    border: #fff 1px solid;
+    height: 600px;
+    width: 1000px;
+  }
+  .contact-details{
+    width: 514px;
+    height: 600px;
+    border: #fff 1px solid;
+    margin-top: -40%;
+    margin-left: 66%;
+    h1, p{
+      margin-left: 40px;
+    }
+    li{
+      list-style: none;
+      margin-top: 20px;
+    }
+  }
+}
 
-
+.mp-section{
+  margin-top: 50px;
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////PORTFOLIO PAGE STYLES////////////////////////////////////
