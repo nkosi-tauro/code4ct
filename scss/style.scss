@@ -455,13 +455,13 @@ box-shadow: 3px 3px ;
   margin-top: 70px;
   width: 1510px;
   height:350px;
-  border: #030303 1px solid;
+  border: #fff 1px solid;
   background-color: #ffffff;
 }
 .tag{
   width: 1515px;
   height: 50px;
-  border: rgb(14, 13, 13) 1px solid;
+  border: rgb(255, 86, 218) 1px solid;
   // margin-top: 19.6%;
   background-color:rgb(243, 60, 90);
   color: white;
@@ -469,7 +469,7 @@ box-shadow: 3px 3px ;
 .col-1{
   width: 505px;
   height: 300px;
-  border: rgb(14, 13, 13) 1px solid;
+  border: #fff 1px solid;
     li{
       list-style: none;
     }
@@ -478,7 +478,7 @@ box-shadow: 3px 3px ;
       margin-left: 15px;
     }
     h3{
-      margin-left: 25px;
+      margin-left: 60px;
     }
 }
 
@@ -487,14 +487,40 @@ box-shadow: 3px 3px ;
   margin-left: 33.4%;
   width: 505px;
   height: 300px;
-  border: rgb(151, 22, 22) 1px solid;
+  border: #fff 1px solid;
+    li{
+      list-style-type: square;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: red;
+      }
+    }
+    h3{
+      margin-left: 40px;
+    }
 }
 .col-3{
   margin-top: -20%;
   margin-left: 66.9%;
   width: 505px;
   height: 300px;
-  border: rgb(14, 13, 13) 1px solid;
+  border: #fff 1px solid;
+  li{
+    list-style-type: square;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: red;
+    }
+  }
+  h3{
+    margin-left: 40px;
+  }
 }
 span{
   float: right;

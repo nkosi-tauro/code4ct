@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="main.js"></script>
+    <script src="js/index.js"></script>
+
 </head>
 <body>
         <div class="navigation-bar">
@@ -37,5 +38,116 @@
                 </div>
             </div>
             <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+
+
+
+
+
+
+            <!-- CAROUSEL SECTION -->
+            <section id="carousel">
+                    <div id='carousel_container'>
+                            <div id='carousel_center'>
+                              <ul id='carousel_ul'>
+                                <li>
+                                  <a href='#'>
+                                    <img src="images/Deloitte-Digital.png" alt="">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <img src="images/partner_capitec-1.png" alt="">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <img src="images/partner_google-1.png" alt="">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <img src="images/Take-A-Lot.png" alt="">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <img src="images/Code4CT-Partners-Lwande.png" alt="">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href='#'>
+                                    <img src="images/Code4CT-Partners-Saratoga-Logo.png" alt="">
+                                  </a>
+                                </li>
+                                <li>
+                                    <a href='#'>
+                                        <img src="images/Code4CT-Partners-Automattic-Logo.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#'>
+                                        <img src="images/Code4CT-Partners-TNS.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
+                          </div>
+            </section>
+
+              <!-- FOOTER -->
+              <footer class="footer">
+                  <div class="col-1"><h3>Contact</h3>
+                      <ul>
+                          <li><i class="fas fa-phone-square fa-2x"  style="color: hotpink;"></i>&nbsp +(021) 685 0991</li>
+                          <li><i class="far fa-envelope fa-2x"  style="color: hotpink;"></i>&nbsp info@code4ct.com</li>
+                          <li><i class="fas fa-map-marker-alt fa-2x"  style="color: hotpink;"></i>&nbsp Innovate South Africa, 403 Old Castle Brewery, 6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBeach Rd, Woodstock, Cape Town, 7915</li>
+                      </ul>
+                  </div>
+                  <div class="col-2"><h3>Company</h3>
+                      <ul>
+                          <li><a href="about.html">About us</a></li>
+                          <li><a href="contact.html">Contact us</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Testimonials</a></li>
+                          <li><a href="#">Affiliate program</a></li>
+                      </ul>
+                      </div>
+                      <div class="col-3"><h3>Help & Support</h3>
+                              <ul>
+                                      <li><a href="#">Help Center</a></li>
+                                      <li><a href="#">Free simple template</a></li>
+                                      <li><a href="#">Refund policy</a></li>
+                                      <li><a href="#">Report spam</a></li>
+                                  </ul>
+                          </div>
+                          <div class="tag"><p>Copyright &copy; 2018 | Privacy Policy  <span class="span"> Follow us  : <a href="https://www.facebook.com/code4ct/" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a>  <a href="https://twitter.com/code4ct?lang=en" target="_blank"><i class="fab fa-twitter" style="color: white;"></i></a>  <a href="https://plus.google.com/100829065774930869640" target="_blank"><i class="fab fa-google-plus-g" style="color: white;" ></i></a></span></p>
+                              </div>
+              </footer>
+            <!-- SCRIPT -->
+
+            <script>
+                if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+      
+            // </script>
 </body>
 </html>

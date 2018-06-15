@@ -72,7 +72,7 @@ function slide(where){
                   $('#carousel_ul li:last').after($('#carousel_ul li:first'));
               }
               //default left indent
-              $('#carousel_ul').css({'left' : '210px'});
+              $('#carousel_ul').css({'left' : '-10px'});
           });
 
 }
