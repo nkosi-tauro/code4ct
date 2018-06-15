@@ -44,12 +44,12 @@
                     <h1>Contact US</h1>
                     <h3><a href="index.html"><span class="h3-about-span"> Home</span></a> &rarr;  <a href="contact.html">Contact US</a> </h3>
                 </header>
-                <!-- <h2 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Meet</span> our team:</h2> -->
+    
                 <!-- FORM -->
                 <section class="form-section">
-                    <div class="form-block"></div>
+                    <div class="form-block"><h1 style="border-bottom:1px solid gray; margin-right: 500px;"> <span style="border-bottom:3px solid #fa5e4a;">Send</span> Us  a Message</h1></div>
                     <div class="contact-details">
-                        <h1 style="border-bottom:2px solid gray;"> <span style="border-bottom:3px solid #fa5e4a;">Con</span>tact Info:</h1><p>afjdhnsjfhebtrhwthjdf</p>
+                        <h1 style="border-bottom:1px solid gray;"> <span style="border-bottom:3px solid #fa5e4a;">Con</span>tact Info:</h1><p>afjdhnsjfhebtrhwthjdf</p>
                         <ul>
                                 <li><i class="fas fa-phone-square fa-2x"  style="color: hotpink;"></i>&nbsp +(021) 685 0991</li>
                                 <li><i class="far fa-envelope fa-2x"  style="color: hotpink;"></i>&nbsp info@code4ct.com</li>
@@ -95,5 +95,33 @@
                           <div class="tag"><p>Copyright &copy; 2018 | Privacy Policy  <span class="span"> Follow us  : <a href="https://www.facebook.com/code4ct/" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a>  <a href="https://twitter.com/code4ct?lang=en" target="_blank"><i class="fab fa-twitter" style="color: white;"></i></a>  <a href="https://plus.google.com/100829065774930869640" target="_blank"><i class="fab fa-google-plus-g" style="color: white;" ></i></a></span></p>
                               </div>
               </footer>
+
+
+                     <!-- SCRIPT -->
+
+            <script>
+                    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+          
+                // </script>
 </body>
 </html>
