@@ -1,0 +1,43 @@
+////////////////////////////////////////////////////VARIABLES///////////////////////////////////////////////
+$gallery-width: 100%;
+$transition-duration: 0.5s;
+
+
+/////////////////////////////////////MIXINS///////////////////////////////////////////////////////////////////////
+@mixin port-img-dimensions{
+    width: 290px;
+    height: 220px;
+  }
+  @mixin about-img-dimensions{
+  width: 290px;
+  height: 240px;
+  }
+  @mixin position{  ///positioning for portfolio and team sections
+    margin-top: 70px;
+    margin-left: 15%;
+    width: 700px;
+    height: 100px;
+    font-size: 1rem;
+  }
+  @mixin team-box-position{
+    width: 230px;
+    height: 230px;
+  }
+  @mixin stat2-box-size{
+    width: 373px;
+    height: 390px;
+    margin-top: -25.9%;
+  }
+  @mixin header {
+    width: 1515px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+     a{
+       text-decoration: none;
+       color: black;
+     }
+     text-transform: uppercase;
+  }
+

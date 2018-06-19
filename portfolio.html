@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="js/index.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
 
 </head>
 <body>
@@ -47,7 +48,42 @@
                     <h3><a href="index.html"><span class="h3-about-span"> Home</span></a> &rarr;  <a href="portfolio.html">portfolio</a> </h3>
                 </header>
 
+                <!-- Info -->
+                <div class="port-main">
+                    <h1 style="border-bottom:1px solid gray;">Our Awes<span style="border-bottom:3px solid #fa5e4a;">ome</span> Portfolio</h1>
+                    <p>fddddddddddddd</p>
+                </div>
+                <!-- GALLERY -->
+                <div class="gallery">
 
+                    <div class="m-p-g">
+                        <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+                        <img src="images/img9.png" data-full="images/img9.png" class="m-p-g__thumbs-img" />
+                        <img src="images/img8.jpg" data-full="images/img8.jpg" class="m-p-g__thumbs-img" />
+                        <img src="images/img7.jpg" data-full="images/img7.jpg" class="m-p-g__thumbs-img" />
+                        <img src="images/img6.jpg" data-full="images/img6.jpg" class="m-p-g__thumbs-img" />
+                        <img src="images/img5.jpg" data-full="images/img5.jpg" class="m-p-g__thumbs-img" />
+                        <img src="images/img4.jpg" data-full="images/img4.jpg"  class="m-p-g__thumbs-img" />
+                        <img src="images/img3.jpg" data-full="images/img3.jpg" class="m-p-g__thumbs-img" />
+                        <img src="images/img10.jpg" data-full="images/img10.jpg"class="m-p-g__thumbs-img" />
+                        <img src="images/img1.jpg" data-full=images/img1.jpg class="m-p-g__thumbs-img" />
+                        <img src="images/img1.jpg" data-full=images/img1.jpg class="m-p-g__thumbs-img" />
+                        <img src="images/img1.jpg" data-full=images/img1.jpg class="m-p-g__thumbs-img" />
+                        <img src="images/img3.jpg" data-full="images/img3.jpg" class="m-p-g__thumbs-img" />
+                        <img src="images/img5.jpg" data-full="images/img3.jpg" class="m-p-g__thumbs-img" />
+                </div>
+                <div class="m-p-g__fullscreen"></div>
+                    </div>
+                </div>
+
+                <!-- EMPTY SPACE -->
+                <div class="empty-space">
+                </div>
+
+
+                    <br>
+                    <br>
+                    <br>
 
             <!-- CAROUSEL SECTION -->
             <section id="carousel">
@@ -130,6 +166,14 @@
               </footer>
             <!-- SCRIPT -->
 
+
+            <script>
+                    var elem = document.querySelector('.m-p-g');
+                
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var gallery = new MaterialPhotoGallery(elem);
+                    });
+                </script>
             <script>
                 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
@@ -154,5 +198,6 @@
 }
       
             // </script>
+        
 </body>
 </html>

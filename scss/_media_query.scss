@@ -1,0 +1,48 @@
+////////////////////////////////////////////MEDIA QUERIES////////////////////////////////////////
+
+///////////////////////////////////////////////////INDEX PAGE/////////////////////////////////////////
+@media screen and (max-width: 640px){
+  
+    .description{
+     
+      margin-left: 200px;
+      width: 640px;
+      .images{
+        margin-top: 50px;
+        margin-left: 0px;
+      }
+    }
+    .stats{
+      justify-content: center;
+      margin-top: 1000px;
+      width: 1500px;
+      height: 1500px;
+      .coding, .communication, .problem-solving, .career-guidance{
+        margin-left: 500px;
+        margin-top: 0;
+      }
+    }
+    .stats2{
+      width: 1500px;
+      height: 1500px;
+    
+      .cups, .nogirl, .projects, .hours{
+        margin-left: 500px;
+        margin-top: 0;
+      }
+    }
+    .sub{
+        margin-left: 500px;
+      }
+    .team, .team1, .team2, .team3, .team4{
+      margin-top: 20px;
+      margin-left: 500px;
+    }
+    .team1-des, .team2-des, .team3-des, .team4-des{
+      margin-top: 10px;
+      margin-left: 500px;
+    
+    }
+    }
+    
+    ///////////////////////////////////////////////////////////////////////////////////

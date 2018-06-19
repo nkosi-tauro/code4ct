@@ -1,0 +1,100 @@
+/////////////////////////////////////////////////////////ABOUT PAGE//////////////////////////////////////////////////////////////////////
+
+.header-about{
+    @include header;
+    }
+    .h3-about-span{
+      color: hotpink;
+    }
+    
+    .images2{
+      width: 600px;
+      height:500px;
+      margin-top: -90%;
+      margin-left:110%;
+      border: 1px solid black;
+      background-image: url(../images/about5.jpg);
+      background-size: cover;
+    }
+    
+    .whoWeAre{
+      width: 1514px;
+      height: 500px;
+      border: #ffffff 1px solid;
+      margin-top: 25%;
+       .info-image{
+         width: 700px;
+         height: 500px;
+         border: #000000 1px solid;
+         background-image: url(../images/about1.jpg);
+         background-size: cover;
+       }
+       .whoWeAre-des{
+        width: 774px;
+        height: 500px;
+        border: #ffffff 1px solid;
+        margin-left: 49%;
+        margin-top: -33.3%;
+        .wwhead{
+          width: 774px;
+          height: 100px;
+          border: #ffffff 1px solid;
+        }
+        .vision{
+          width: 380px;
+          height: 200px;
+          border: #ffffff 1px solid;
+        }
+        .mission{
+          width: 380px;
+          height: 200px;
+          border: #ffffff 1px solid;
+        }
+        .help{
+          width: 380px;
+          height: 200px;
+          border: #ffffff 1px solid;
+          margin-top: -52%;
+          margin-left: 382px;
+        }
+        .support{
+          width: 380px;
+          height: 200px;
+          border: #ffffff 1px solid;
+          margin-left: 382px;
+        }
+       }
+    }
+    .stats3{
+      margin-top: 90px;
+      width: 1514px;
+      height: 300px;
+      border: #000000 1px solid;
+      background-color: #000000;
+      .webDesign {
+        height: 300px;
+        width: 378px;
+        border: #000000 1px solid;
+      }
+      .branding{
+        height: 300px;
+        width: 378px;
+        border: #000000 1px solid;
+        margin-top:-20%;
+        margin-left: 25%;
+      }
+      .photography{
+        height: 300px;
+        width: 378px;
+        border: #000000 1px solid;
+        margin-top:-20%;
+        margin-left: 50%;
+      }
+      .printDesign{
+        height: 300px;
+        width: 378px;
+        border: #000000 1px solid;
+        margin-top:-20%;
+        margin-left: 75%;
+      }
+    }

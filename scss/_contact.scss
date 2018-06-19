@@ -1,0 +1,33 @@
+//////////////////////////////////////////////////////////////CONTACT PAGE STYLES////////////////////////////////////
+.header-contact{
+    @include header;
+  }
+  .form-section{
+    margin-top: 50px;
+    width: 1514px;
+    height: 600px;
+    border: #000000 1px solid;
+    .form-block{
+      border: #fff 1px solid;
+      height: 600px;
+      width: 1000px;
+    }
+    .contact-details{
+      width: 514px;
+      height: 600px;
+      border: #fff 1px solid;
+      margin-top: -40%;
+      margin-left: 66%;
+      h1, p{
+        margin-left: 40px;
+      }
+      li{
+        list-style: none;
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  .mp-section{
+    margin-top: 50px;
+  }

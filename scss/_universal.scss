@@ -1,0 +1,296 @@
+///////////////////////////////////////////////////////////NAVIGATION/////////////////////////////////////////////////////////////
+#navigation-container {
+ 
+    margin: 0 auto;
+    height: 70px;
+  }
+  
+  .navigation-bar {
+    background-color: rgb(253, 253, 253);
+    height: 70px;
+    // width: 100%;
+    text-align:center;
+    padding: 20px;
+    position: sticky;
+    top:1px;
+    z-index:999;
+    
+  }
+  .navigation-bar img{
+  position: absolute;
+  top:0;
+  left:4%;
+  }
+  .navigation-bar ul {
+   
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .navigation-bar li {
+    list-style-type: none;
+    padding: 15px;
+    display: inline;
+  }
+  
+  .navigation-bar li a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 70px;
+    // padding: 5px 15px;
+    
+  }
+  .navigation-bar  .active{
+    color:rgb(247, 20, 58);
+  }
+  
+  
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    
+    .search {
+      width: 50%;
+      position: absolute;
+      margin-top:-70%;  
+      margin-left:140%;  
+      position: sticky;
+      top:30px;
+    }
+    
+    .searchTerm {
+      float: left;
+      width: 100%;
+      border: 1px solid rgb(173, 172, 172);
+      padding: 15px;
+      height: 0.9px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+    
+    .searchTerm:focus{
+      color: rgb(14, 15, 15);
+    }
+    
+    .searchButton {
+      position: absolute;  
+      right: -40px;
+      width: 40px;
+      height: 32px;
+      border : 1px solid rgb(173, 172, 172);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: rgb(17, 17, 17);
+      text-align: center;
+      color: #fff;
+     
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .wrap{
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    
+    /////////////////////////////////////////////////////SUBSCRIBE SECTION////////////////////////////////////
+
+.sub{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 37%;
+  }
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////CAROUSEL////////////////////////////////////////////////
+  
+  #carousel{
+    width: 1515px;
+    height:250px;
+    border: #030303 1px solid;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+    #carousel_center {
+      width:100%;
+      height: auto;
+  }
+  ///////////////IMAGES IN CAROUSEL/////////////
+  #carousel_ul li img {
+          width: 100%;
+          height: 160px;
+  
+  }
+  #carousel_ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    top: 30px;
+    width:112%;
+  }
+  //////////////CAROUSEL list
+  #carousel_ul li {
+      width: 200px;
+      height: 110px;
+      padding: 0px;
+      margin-right: 10px;
+      float: left;
+  }
+  ////////////CAROUSEL IMAGE SIZING
+  #carousel_ul li img {
+          cursor: pointer;
+          cursor: hand;
+          border: 0px;
+  }
+  
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////
+  
+  .footer{
+    margin-top: 70px;
+    width: 1510px;
+    height:350px;
+    border: #fff 1px solid;
+    background-color: #ffffff;
+  }
+  .tag{
+    width: 1515px;
+    height: 50px;
+    border: rgb(255, 86, 218) 1px solid;
+    // margin-top: 19.6%;
+    background-color:rgb(243, 60, 90);
+    color: white;
+  }
+  .col-1{
+    width: 505px;
+    height: 300px;
+    border: #fff 1px solid;
+      li{
+        list-style: none;
+      }
+      i{
+        margin-top: 15px;
+        margin-left: 15px;
+      }
+      h3{
+        margin-left: 60px;
+      }
+  }
+  
+  .col-2{
+    margin-top: -20%;
+    margin-left: 33.4%;
+    width: 505px;
+    height: 300px;
+    border: #fff 1px solid;
+      li{
+        list-style-type: square;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+          color: red;
+        }
+      }
+      h3{
+        margin-left: 40px;
+      }
+  }
+  .col-3{
+    margin-top: -20%;
+    margin-left: 66.9%;
+    width: 505px;
+    height: 300px;
+    border: #fff 1px solid;
+    li{
+      list-style-type: square;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: red;
+      }
+    }
+    h3{
+      margin-left: 40px;
+    }
+  }
+  .span{
+    float: right;
+    margin-right: 9%;
+    margin-left: 10px;
+  }
+  i{
+    margin-left: 10px;
+  }
+  
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////SCROLL TO TOP ICON/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #1f1e1e;
+    color: rgb(255, 251, 251);
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+  }
+  #back-to-top:hover {
+    background: #7c1065;
+  }
+  #back-to-top.show {
+    opacity: 1;
+  }
+  // Animate the size, outside
+  #back-to-top:hover, 
+  #back-to-top:focus {
+    animation: pulse 2s;
+    box-shadow: 0 0 0 2em rgba(#fff,0);
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+  }
+  $colors: (
+    pulse: #f71485, 
+  );
+  @each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+  button {  
+    color: var(--color);
+    transition: 0.25s;
+    
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }  
