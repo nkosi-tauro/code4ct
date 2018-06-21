@@ -3,6 +3,8 @@ $gallery-width: 100%;
 $transition-duration: 0.5s;
 
 
+$borderSettings: none;
+
 /////////////////////////////////////MIXINS///////////////////////////////////////////////////////////////////////
 @mixin port-img-dimensions{
     width: 290px;
@@ -32,7 +34,7 @@ $transition-duration: 0.5s;
     width: 1515px;
     height: 200px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     background-color: #f2f2f2;
      a{
        text-decoration: none;
@@ -40,4 +42,43 @@ $transition-duration: 0.5s;
      }
      text-transform: uppercase;
   }
+
+
+  
+  $red:#F44336;
+  @mixin transition($in) {
+    transition:$in;
+    -webkit-transition:$in;
+    -moz-transition:$in;
+    -o-transition:$in;
+    -ms-transition:$in;
+  }
+  @mixin transform($in) {
+    transform:$in;
+    -webkit-transform:$in;
+    -moz-transform:$in;
+    -o-transform:$in;
+    -ms-transform:$in;
+  }
+  @mixin animation($in) {
+    animation:$in;
+    -webkit-animation:$in;
+    -moz-animation:$in;
+    -o-animation:$in;
+    -ms-animation:$in;
+  }
+
+////////////////////////////////////////////////////////////////////
+// Main Button Style
+
+@mixin main-button{
+  outline:none;
+	border:none;
+	padding:15px;
+	display:block;
+	margin:20px 0px;
+	cursor:pointer;
+  font-size:20px;
+  position:relative;
+}
 

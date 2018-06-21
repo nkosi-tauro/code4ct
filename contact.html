@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="main.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/jashkenas/coffeescript/master/lib/coffee-script/coffee-script.js"></script>
+    
+    <script src="js/form.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
         <div class="navigation-bar">
@@ -37,7 +40,7 @@
                 </div>
             </div>
             <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
-
+            
 
              <!-- Header -->
              <header class="header-contact">
@@ -47,7 +50,19 @@
     
                 <!-- FORM -->
                 <section class="form-section">
-                    <div class="form-block"><h1 style="border-bottom:1px solid gray; margin-right: 500px;"> <span style="border-bottom:3px solid #fa5e4a;">Send</span> Us  a Message</h1></div>
+                    <div class="form-block"><h1 style="border-bottom:1px solid gray; margin-right: 500px;"> <span style="border-bottom:3px solid #fa5e4a;">Send</span> Us  a Message</h1>
+
+                        
+                    <form id="form" class="topBefore">
+		
+                        <input id="name" type="text" placeholder="Your Name" required>
+                        <input id="name" type="number" placeholder="Your Phone" required>
+                        <input id="email" type="text" placeholder="Your E-mail" required>
+                        <textarea id="message" type="text" placeholder="Your Messages"></textarea>
+                        <input id="submit" type="submit" class='myButt contact four' value="Send Email">
+                    </form>
+                    </div>
+                    
                     <div class="contact-details">
                         <h1 style="border-bottom:1px solid gray;"> <span style="border-bottom:3px solid #fa5e4a;">Con</span>tact Info:</h1><p>afjdhnsjfhebtrhwthjdf</p>
                         <ul>
@@ -123,5 +138,36 @@
     }
           
                 // </script>
+                <script type="text/coffescript">
+                    class floatingLabel
+  
+  constructor: (form,options={}) ->
+    
+    return unless form
+    
+    options.focusClass ||= "focus"
+    options.activeClass ||= "active"
+    options.errorClass ||= "error"
+    
+    form.classList.add 'has-floated-label'
+    
+    for label in form.querySelectorAll('label')
+      return unless input = document.querySelector("##{label.getAttribute('for')}")
+                  
+      for event in ['keyup','input', 'change']
+        input.addEventListener event, ->
+          @parentNode.classList.remove options.errorClass
+          @parentNode.classList.toggle options.activeClass, !!@value
+      input.addEventListener 'focus', ->
+        @parentNode.classList.add options.focusClass
+      input.addEventListener 'blur', ->
+        @parentNode.classList.remove options.focusClass
+      input.parentNode.classList.toggle options.activeClass, !!input.value
+
+# initialize
+    
+window.floatingLabel = new floatingLabel document.querySelector('.form')
+  
+  </script>
 </body>
 </html>

@@ -2,7 +2,12 @@
 
 ///////////////////////////////////////////////////INDEX PAGE/////////////////////////////////////////
 @media screen and (max-width: 640px){
-  
+body{
+  width: 1514px;
+}
+.navigation-bar{
+  display: none;
+}
     .description{
      
       margin-left: 200px;
@@ -44,5 +49,35 @@
     
     }
     }
-    
+.hero{
+  width: 100%
+}
+#hero-text{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  font-size: 0.6em;
+  top: 120px;
+  animation-name: slideDown;
+  animation-duration: 1s;
+
+  @keyframes slideDown {
+      0% {
+          top: -150px;
+          opacity: 0;
+      }
+      50% {
+          top: 0px;
+          opacity: 0;
+      }
+      100% {
+          top: 120px;
+          opacity: 1;
+      }
+  }
+
+}
+
+
     ///////////////////////////////////////////////////////////////////////////////////
+    ////navigation

@@ -41,11 +41,19 @@
         </div>
     </div>
     <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+
+ 
     <!-- //////////////////////////////////////////////////////////////////HERO SECTION -->
             <section id="hero">
                 <div class="hero">
+                        <div id=hero-text>
+                                <h1>Code For Cape Town</h1>
+                                <h3>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</h3>
+                                <a href="about.html"><button class='myButt2 four'><span>Read More</span></button></a>
+                                <a href="courses.html"><button class='myButt1 four'><span>Start Coding</span></button></a>
+                            </div>
                 </div>
-
+                
             </section>
             
 
@@ -53,7 +61,7 @@
             <div class="description">
                 <h2 style="border-bottom:1px solid gray;"><span style="border-bottom:3px solid #fa5e4a;">Who</span> We Are</h2>
                 <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
-                <a href="about.html"><button>Read More</button></a>
+                <a href="about.html"><button class='myButt four'><span>Read More</span></button></a>
                 <div class="images">
                     <div class="img1 zoom "></div>
                     <div class="img2 zoom"></div>
@@ -112,7 +120,7 @@
             <!-- STATS 2 SECTION -->
             <section>
                 <div class="stats2"  id="counter">
-                    <div class="cups " ><i class="fas fa-coffee fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="3000"></p><p>Cups of coffee</p></div>
+                    <div class="cups " ><i class="fas fa-coffee fa-7x" style="color: hotpink;"></i><div class="count1"><p class="counter-value" data-count="3000"></p></p>Cups of coffee</p></div></div>
                     <div class="nogirl" ><i class="fas fa-female fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="780"></p><p>Number Of Girls</p></div>
                     <div class="projects " ><i class="fas fa-clipboard-list fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="3120"></p><p>Projects completed</p></div>
                     <div class="hours" ><i class="fas fa-hourglass-start fa-7x" style="color: hotpink;"></i><p class="counter-value" data-count="8760"></p><p> Hours of coding</p></div>
@@ -124,6 +132,12 @@
                 <div class="sub">
                     <div class="sub-text">
                         <h2><i class="fas fa-paper-plane" style="color: hotpink;"></i>&nbsp SUBSCRIBE TO US</h2><p>Join our newsletter and receive handpicked content and a motivational quote in your inbox.</p>
+                    </div>
+                    <div id="the_subscribeform">
+                            <form id="myForm">
+                                    <input type="email" name="userEmail" id="userEmail" placeholder="enter your email" required>
+                                    <button  type="submit" class='myButt sub-butt four'><span>Submit</span></button>
+                            </form>
                     </div>
                 </div>
             </section>
@@ -253,7 +267,7 @@ $(window).scroll(function() {
 
         {
 
-          duration: 6000,
+          duration: 2000,
           easing: 'swing',
           step: function() {
             $this.text(Math.floor(this.countNum));
@@ -269,6 +283,10 @@ $(window).scroll(function() {
   }
 
 });
+                </script>
+                <script>
+
+
                 </script>
 </body>
 </html>

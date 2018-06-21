@@ -1,12 +1,16 @@
 //////////////////////////////////////////////////////////////CONTACT PAGE STYLES////////////////////////////////////
 .header-contact{
     @include header;
+   
   }
   .form-section{
     margin-top: 50px;
     width: 1514px;
-    height: 600px;
-    border: #000000 1px solid;
+    height: 500px;
+    border: #ffffff 1px solid;
+    h1{
+      margin-left: 52px;
+    }
     .form-block{
       border: #fff 1px solid;
       height: 600px;
@@ -31,3 +35,164 @@
   .mp-section{
     margin-top: 50px;
   }
+
+  ///////////////////////////////Form/////////////
+
+
+ #the_subscribeform{
+  border: $borderSettings;
+  height: auto;
+  margin-top: 20px;
+  padding: 5px;
+
+  input{
+      height: 30px;
+      font-size: 0.9em;
+      color: grey;
+  }
+
+ }
+
+ //////////////////////////////////////FORM///////////
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  position: relative;
+  // width: 500px;
+/*   margin: 50px auto 100px auto; */
+margin-left: 50px
+}
+
+input {
+
+  font-size: 1em;
+  width: 253px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  margin-top: 10px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  color: #e2dedb;
+}
+
+textarea {
+  font-family: 'Varela Round', sans-serif;
+  width: 770px;
+  margin-top: 10px;
+  height: 210px;
+  font-size: 1.5em;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  color: #e2dedb;
+}
+
+#submit {
+  width: 110px;
+  margin-top: 10px;
+  padding: 0;
+  font-size: 1em;
+  color: #ffffff;
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  margin-right:20px;
+}
+

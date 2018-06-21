@@ -5,7 +5,7 @@
   width: 1515px;
   height: 200px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -91,12 +91,17 @@
   height: 300px;
   border: #000000 1px solid;
   background-color: #000000;
+  text-align: center;
 }
 
 .stats3 .webDesign {
   height: 300px;
   width: 378px;
   border: #000000 1px solid;
+}
+
+.stats3 .webDesign p {
+  color: white;
 }
 
 .stats3 .branding {
@@ -107,12 +112,20 @@
   margin-left: 25%;
 }
 
+.stats3 .branding p {
+  color: white;
+}
+
 .stats3 .photography {
   height: 300px;
   width: 378px;
   border: #000000 1px solid;
   margin-top: -20%;
   margin-left: 50%;
+}
+
+.stats3 .photography p {
+  color: white;
 }
 
 .stats3 .printDesign {
@@ -123,11 +136,46 @@
   margin-left: 75%;
 }
 
+.stats3 .printDesign p {
+  color: white;
+}
+
+.circular-bar {
+  text-align: center;
+  width: 30%;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+
+.circular-bar .circular-bar-content {
+  margin-bottom: 40px;
+  margin-top: -95px;
+  text-align: center;
+}
+
+.circular-bar .circular-bar-content strong {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  line-height: 24px;
+}
+
+.circular-bar .circular-bar-content label {
+  display: block;
+  font-weight: 300;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  line-height: 20px;
+}
+
 .header-portfolio {
   width: 1515px;
   height: 200px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -148,6 +196,11 @@
 }
 
 .gallery {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.gallery2 {
   margin-top: 10%;
   margin-bottom: 10%;
 }
@@ -334,6 +387,12 @@
 }
 
 @media screen and (max-width: 640px) {
+  body {
+    width: 1514px;
+  }
+  .navigation-bar {
+    display: none;
+  }
   .description {
     margin-left: 200px;
     width: 640px;
@@ -373,11 +432,40 @@
   }
 }
 
+.hero {
+  width: 100%;
+}
+
+#hero-text {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  font-size: 0.6em;
+  top: 120px;
+  animation-name: slideDown;
+  animation-duration: 1s;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -150px;
+    opacity: 0;
+  }
+  50% {
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    top: 120px;
+    opacity: 1;
+  }
+}
+
 .header-contact {
   width: 1515px;
   height: 200px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -390,8 +478,12 @@
 .form-section {
   margin-top: 50px;
   width: 1514px;
-  height: 600px;
-  border: #000000 1px solid;
+  height: 500px;
+  border: #ffffff 1px solid;
+}
+
+.form-section h1 {
+  margin-left: 52px;
 }
 
 .form-section .form-block {
@@ -421,11 +513,160 @@
   margin-top: 50px;
 }
 
+#the_subscribeform {
+  border: none;
+  height: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#the_subscribeform input {
+  height: 30px;
+  font-size: 0.9em;
+  color: grey;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  position: relative;
+  /*   margin: 50px auto 100px auto; */
+  margin-left: 50px;
+}
+
+input {
+  font-size: 1em;
+  width: 253px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  margin-top: 10px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  color: #e2dedb;
+}
+
+textarea {
+  font-family: 'Varela Round', sans-serif;
+  width: 770px;
+  margin-top: 10px;
+  height: 210px;
+  font-size: 1.5em;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  color: #e2dedb;
+}
+
+#submit {
+  width: 110px;
+  margin-top: 10px;
+  padding: 0;
+  font-size: 1em;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  margin-right: 20px;
+}
+
 .header-courses {
   width: 1515px;
   height: 200px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -529,11 +770,17 @@
 }
 
 .sub {
-  width: 400px;
+  width: 700px;
   height: 300px;
   text-align: center;
   margin-top: 70px;
-  margin-left: 37%;
+  margin-left: 28%;
+}
+
+.sub-butt {
+  margin-top: -39px;
+  margin-left: 440px;
+  padding: 10px;
 }
 
 #carousel {
@@ -716,14 +963,51 @@ i {
   --hover: #f74d14;
 }
 
-button {
+.pulse {
   color: var(--color);
   transition: 0.25s;
 }
 
-button:hover, button:focus {
+.pulse:hover, .pulse:focus {
   border-color: var(--hover);
   color: #fff;
+}
+
+.myButt {
+  outline: none;
+  border: none;
+  padding: 15px;
+  display: block;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  background-color: #f82638;
+  border: 2px solid #fff;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+.four {
+  overflow: hidden;
+}
+
+.four span {
+  color: white;
+  display: inline-block;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+.four:hover span {
+  color: white;
+  margin-right: 20px;
 }
 
 body, html {
@@ -732,12 +1016,102 @@ body, html {
   font-family: 'Varela Round', sans-serif;
 }
 
+#the_subscribeform {
+  border: none;
+  height: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#the_subscribeform input {
+  height: 30px;
+  font-size: 0.9em;
+  color: grey;
+}
+
+.sub-butt {
+  margin-top: -39px;
+  margin-left: 440px;
+  padding: 10px;
+}
+
 .hero {
   background-image: url("../images/code4ct-homepage.jpg");
   background-size: cover;
   height: 90vh;
   padding: 0;
-  width: 100%;
+}
+
+#hero-text {
+  position: absolute;
+  background: rgba(80, 80, 80, 0.699);
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 50px;
+  top: 200px;
+  opacity: 1;
+  text-align: center;
+  animation-name: slideDown;
+  animation-duration: 1s;
+  font-size: 20px;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -150px;
+    opacity: 0;
+  }
+  50% {
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    top: 200px;
+    opacity: 1;
+  }
+}
+
+#hero-text h3 {
+  margin-top: 10px;
+}
+
+.myButt1 {
+  outline: none;
+  border: none;
+  padding: 15px;
+  display: block;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-left: 52%;
+  margin-top: -78.3px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+.myButt2 {
+  outline: none;
+  border: none;
+  padding: 15px;
+  display: block;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  background-color: #f82638;
+  margin-left: 30%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 }
 
 .description {
@@ -751,7 +1125,7 @@ body, html {
 .images {
   width: 600px;
   height: 500px;
-  margin-top: -90%;
+  margin-top: -120%;
   margin-left: 110%;
 }
 
@@ -793,7 +1167,7 @@ body, html {
 }
 
 .stats {
-  margin-top: 300px;
+  margin-top: 320px;
   width: 1515px;
   height: 350px;
   background-color: #000000;
