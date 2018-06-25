@@ -22,7 +22,7 @@
                     <ul>
                             <li><a  href="index.html">HOME</a></li>
                             <li><a href="courses.html">COURSES</a></li>
-                            <li><a class="active" href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a class="act" href="portfolio.html">PORTFOLIO</a></li>
                             <li><a href="about.html">ABOUT</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
                     </ul>
@@ -38,7 +38,7 @@
                      </div>
                 </div>
             </div>
-            <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+          
 
 
             
@@ -77,6 +77,8 @@
                 <div class="m-p-g__fullscreen"></div>
                     </div>
                 </div>
+                <br>
+              
 
                 <!-- EMPTY SPACE -->
                 <div class="empty-space">
@@ -86,7 +88,7 @@
                     <br>
                     <br>
                     <br>
-
+                    <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
             <!-- CAROUSEL SECTION -->
             <section id="carousel">
                     <div id='carousel_container'>
@@ -200,29 +202,9 @@
 }
       
             // </script>
-            <script>
-            (function(){
-  'use strict';
-
-  class Menu {
-    constructor(settings) {
-      this.nodeMenu = settings.nodeMenu;
-      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
-    }
-
-    toggle() {
-      return this.nodeMenu.classList.toggle('js-menu_activated');
-    }
-  }
-
-  let nodeMenu = document.querySelector('body');
   
-  new Menu({
-    nodeMenu: nodeMenu,
-    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
-  });
-})();
-            </script>
+        </script>
+        
         
 </body>
 </html>

@@ -22,7 +22,7 @@
           
           <nav id="menu" role="navigation">
             <ul>
-                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a class="act" href="index.html">HOME</a></li>
                     <li><a href="courses.html">COURSES</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -40,12 +40,39 @@
              </div>
         </div>
     </div>
-    <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+    
 
  
     <!-- //////////////////////////////////////////////////////////////////HERO SECTION -->
             <section id="hero">
                 <div class="hero">
+                        <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                  <img  src="images/code4ct-homepage.jpg" style="width:100%">
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <img src="images/code4ct_homeslider2.jpg" style="width:100%" height="700vh">
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <img src="images/code4ct_homeslider3.jpg" style="width:100% " height="700vh" >
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                                </div>
+                                <br>
+                                <br>
+                                
+                                <div style="text-align:center">
+                                  <span class="dot"></span>
+                                  <span class="dot"></span> 
+                                  <span class="dot"></span> 
+                                </div>
+                                
                         <div id=hero-text>
                                 <h1>Code For Cape Town</h1>
                                 <h3>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</h3>
@@ -55,7 +82,8 @@
                 </div>
                 
             </section>
-            
+            <br>
+            <br>
 
             <!-- About us -->
             <div class="description">
@@ -141,7 +169,7 @@
                     </div>
                 </div>
             </section>
-
+            <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
             <!-- CAROUSEL SECTION -->
             <section id="carousel">
                     <div id='carousel_container'>
@@ -285,8 +313,35 @@ $(window).scroll(function() {
 });
                 </script>
                 <script>
-
-
-                </script>
+                        var slideIndex = 0;
+                        showSlides();
+                        
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            
+                            for (i = 0; i < slides.length; i++) {
+                               slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 8000); // Change image every 2 seconds
+                        }
+                        </script>
 </body>
 </html>

@@ -10,7 +10,7 @@
     .images2{
       width: 600px;
       height:500px;
-      margin-top: -90%;
+      margin-top: -100%;
       margin-left:110%;
       border: 1px solid black;
       background-image: url(../images/about5.jpg);
@@ -22,12 +22,11 @@
       height: 500px;
       border: #ffffff 1px solid;
       margin-top: 25%;
-       .info-image{
+       .info-video{
          width: 700px;
          height: 500px;
-         border: #000000 1px solid;
-         background-image: url(../images/about1.jpg);
-         background-size: cover;
+         border: #ffffff 1px solid;
+    
        }
        .whoWeAre-des{
         width: 774px;
@@ -143,4 +142,5 @@
         line-height: 1.25rem;
         line-height: 20px;
       }
+      
       
