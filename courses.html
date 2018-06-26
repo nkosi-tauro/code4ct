@@ -50,10 +50,9 @@
                 </header>
 
 
-                <!-- <div id="course-img">
-                    </div> -->
 
-
+            <!-- =============================================== -->
+            <!-- ACCORDION -->
                 <center><h2>Recommended streams</h2></center>
 
             <button class="accordion">Create With Code Series</button>
@@ -85,7 +84,7 @@
 
               <p><em>Financial aid is available for female learners who meet requirements and can prove financial need.</em></p>
 
-             <a class="add-to-cart follow" href="#" data-name="Create With Code Series" data-price="1800">Add To Cart</a>
+             <a  onclick="myFunction()" class="add-to-cart follow" href="#" data-name="Create With Code Series" data-price="1800">Add To Cart</a>
             
 
             </div>
@@ -126,14 +125,12 @@
       
                     <p><em>Financial aid is available for female learners who meet requirements and can prove financial need.</em></p>
       
-                   <a class="add-to-cart follow" href="#" data-name="Tech Innovators Level 1" data-price="4200">Add To Cart</a>
+                   <a onclick="myFunction()" class="add-to-cart follow" href="#" data-name="Tech Innovators Level 1" data-price="4200">Add To Cart</a>
                   
       
             </div>
             <!--  -->
             <!--  -->
-
-
             <br>
             <button class="accordion">Tech Innovators Level 2</button>
             <div class="panel">
@@ -169,20 +166,122 @@
        
                      <p><em>Financial aid is available for female learners who meet requirements and can prove financial need.</em></p>
        
-                    <a class="add-to-cart follow" href="#" data-name="Tech Innovators Level 2" data-price="5600">Add To Cart</a>
-
+                    <a onclick="myFunction()" class="add-to-cart follow" href="#clear-cart" data-name="Tech Innovators Level 2" data-price="5600">Add To Cart</a>
             </div>
             <br>
             
-            
-                <div>
-                <center><h2>Beginner Coding Courses</h2></center>
+            <!-- =============================================== -->
 
-                <figure class="snip1336">
-                        <img src="images/js.png" alt="sample87" />
-                        <figcaption>
+
+            <!-- =============================================== -->
+                <!-- INTRODUCTORY -->
+        
+                <div  id="beginnerC" >
+                        <center><h2>Introductory Coding Courses</h2></center>
+                <div id="intro-code">
+                    <div class="intro-code_img"><i class="fas fa-tv fa-10x" style="color: rgb(15, 0, 228);"></i></div>
+                    <div class="intro-code1">
+                        <h2>Intro to Coding: Web Pages</h2>
+                        <p>Code a simple one-page website using HTML and JQuery.</p>
+                        <p><b>Duration:</b>3 hours <br>
+                            <b>Price:</b>R250</p>
+                            <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Coding: Web Pages" data-price="5600"></center>
+                    </div>
+                    <div class="intro-code2">
+                            <h2> Create with Code: Web Pages</h2>
+                            <p>Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</p>
+                            <p><b>Duration:</b>3 hours <br>
+                                <b>Price:</b>R960</p>
+                                <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name=" Create with Code: Web Pages" data-price="960"></center>
+                    </div>
+                    <div class="intro-code3">
+                            <h2>
+                                    Getting started as a developer</h2>
+                            <p>Learn how to set up a development environment and practical skills to start coding.</p>
+                            <p><b>Duration:</b>3 hours <br>
+                                <b>Price:</b>R250</p>
+                            <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Getting started as a developer" data-price="250"></center>
+                    </div>
+                </div>
+                <div id="intro-music">
+                        <div class="intro-music_img"><i class="fas fa-headphones fa-10x" style="color: rgb(15, 0, 228);"></i></div>
+                        <div class="intro-music1">
+                                <h2>Intro to Coding: Music</h2>
+                                <p>Code a song using SonicPi software on a Raspberry Pi computer.</p>
+                                <p><b>Duration:</b>3 hours <br>
+                                    <b>Price:</b>R250</p>
+                                <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Intro to Coding: Music" data-price="250"></center>
+                        </div>
+                        <div class="intro-music2">
+                                <h2>Create with Code: Music</h2>
+                                <p>Learn computer science principles by coding music with a Raspberry Pi computer.</p>
+                                <p><b>Duration:</b>3 hours <br>
+                                    <b>Price:</b>R960</p>
+                                <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Create with Code: Music" data-price="960"></center>
+                        </div>
+                    </div>
+                    <div id="intro-animate">
+                            <div class="intro-animate_img"><i class="far fa-play-circle fa-10x" style="color: rgb(15, 0, 228);"></i></div>
+                            <div class="intro-animate1">
+                                    <h2>Intro to Coding: Animation</h2>
+                                    <p>Create a 2D animation using coding language JavaScript.</p>
+                                    <p><b>Duration:</b>3 hours <br>
+                                        <b>Price:</b>R250</p>
+                                    <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Intro to Coding: Animation" data-price="250"></center>
+                            </div>
+                            <div class="intro-animate2">
+                                    <h2>Create with Code: Animation</h2>
+                                    <p>Learn computer science principles by coding animations using JavaScript..</p>
+                                    <p><b>Duration:</b>3 hours <br>
+                                        <b>Price:</b>R960</p>
+                                    <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Create with Code: Animation" data-price="960"></center>
+                            </div>
+                        </div>
+                </div>
+                <!--  -->
+
+                <div id="beginCourse">
+                        <center><h2>Beginner Coding Courses</h2></center>
+                        <div id="begin-javascript">
+                                <div class="begin-javascript_img"><i class="fas fa-project-diagram fa-10x" style="color: rgb(15, 0, 228);margin-left: 110px"></i></div>
+                                <div class="begin-javascript1">
+                                        <h2>Beginner JavaScript</h2>
+                                        <p>Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.</p>
+                                        <p><b>Duration:</b>6 Days <br>
+                                            <b>Price:</b>R1800</p>
+                                        <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Beginner JavaScript" data-price="1800"></center>
+                                </div>
+                            </div>
+                            <div id="begin-frontEnd">
+                                    <div class="begin-frontEnd_img"><i class="far fa-user-circle fa-10x " style="color: rgb(15, 0, 228);margin-left: 110px"></i></div>
+                                    <div class="begin-frontEnd1">
+                                            <h2>Beginner Front End Web Development</h2>
+                                            <p>Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages..</p>
+                                            <p><b>Duration:</b>6 days
+                                                <br>
+                                                <b>Price:</b>R1800</p>
+                                            <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Beginner Front End Web Development" data-price="1800"></center>
+                                    </div>
+                                </div>
+                                <div id="begin-python">
+                                        <div class="begin-python_img"><i class="far fa-play-circle fa-10x" style="color: rgb(15, 0, 228); margin-left: 110px"></i></div>
+                                        <div class="begin-python1">
+                                                <h2>Beginner Python</h2>
+                                                <p>Develop a basic proficiency in programming principles and methods in Python.</p>
+                                                <p><b>Duration:</b>6 days
+                                                    <br>
+                                                    <b>Price:</b>R1800</p>
+                                                <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Beginner Python" data-price="250"></center>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                <!-- <figure class="snip1336"> -->
+                        <!-- <img src="images/js.png" alt="sample87" /> -->
+                        <!-- <figcaption>
                           <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" class="profile" /> -->
-                          <h2>Javascript<span>Skill Level: Beginner</span></h2>
+                          <!-- <h2>Javascript<span>Skill Level: Beginner</span></h2>
                           <p><em>Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.</em>
                             <br>
                             <br>
@@ -193,12 +292,13 @@
                             </p>
                           <center><a class="add-to-cart follow" href="#" data-name="Beginner JavaScript" data-price="1800">Add To Cart</a></center>
                           <!-- <a href="#" class="info">More Info</a> -->
-                        </figcaption>
+                        <!-- </figcaption>
                       </figure>
-                      <figure class="snip1336 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="sample74" />
-                        <figcaption>
+                      <figure class="snip1336 hover"> -->
+                          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="sample74" /> -->
+                        <!-- <figcaption> -->
                           <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg" alt="profile-sample2" class="profile" /> -->
-                          <h2>Front End Web Development<span>Skill Level: Beginner</span></h2>
+                          <!-- <h2>Front End Web Development<span>Skill Level: Beginner</span></h2>
                           <p><em>Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.</em>
                             <br><br>
                             <b>Duration :</b> 6 Days
@@ -208,12 +308,14 @@
                         </p>
                         <center><a class="add-to-cart follow" href="#" data-name="Beginner Front End Web Development" data-price="1800">Add To Cart</a></center>
                           <!-- <a href="#" class="info">More Info</a> -->
-                        </figcaption>
-                      </figure>
-                      <figure class="snip1336"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample69.jpg" alt="sample69" />
+                        <!-- </figcaption>
+                      </figure> --> 
+
+                      <!-- <figure class="snip1336">
+                          
                         <figcaption>
                           <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" /> -->
-                          <h2> Python<span>Skill Level: Beginner</span></h2>
+                          <!-- <h2> Python<span>Skill Level: Beginner</span></h2>
                           <p><em>Develop a basic proficiency in programming principles and methods in Python.</em>
                             <br><br>
                             <b>Duration :</b> 6 Days
@@ -222,12 +324,18 @@
                         </p>
                         <center><a class="add-to-cart follow" href="#" data-name="Beginner Python" data-price="1800">Add To Cart</a></center>
                           <!-- <a href="#" class="info">More Info</a> -->
-                        </figcaption>
+                        <!-- </figcaption>
                       </figure>
-                    </div>
-                
-                
+                    </div> -->
 
+
+                    
+                <!-- =============================================== -->
+
+              
+                    
+                
+                <!-- =============================================== -->
                 <!-- CART CHECKOUT -->
                 <div id="cart-container">
                     <center><h2>Cart <i class="fas fa-cart-plus" style="color: rgb(175, 6, 90)"></i></h2></center>
@@ -241,75 +349,13 @@
                 </div>
                 </div>
                 <!--  -->
-
-
+                <!-- =============================================== -->
 
                 <br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br><br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br><br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br><br> <br>  <br>   <br>  
-                <div>
-                        <center><h2>Beginner Coding Courses</h2></center>
-        
-                        <figure class="snip1336">
-                                <img src="images/js.png" alt="sample87" />
-                                <figcaption>
-                                  <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" class="profile" /> -->
-                                  <h2>Javascript<span>Skill Level: Beginner</span></h2>
-                                  <p><em>Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.</em>
-                                    <br>
-                                    <br>
-                                    <b>Duration :</b> 6 Days
-                                    <br>
-                                    <br>
-                                    <b>Price :</b>R1800
-                                    </p>
-                                  <center><a class="add-to-cart follow" href="#" data-name="Beginner JavaScript" data-price="1800">Add To Cart</a></center>
-                                  <!-- <a href="#" class="info">More Info</a> -->
-                                </figcaption>
-                              </figure>
-                              <figure class="snip1336 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="sample74" />
-                                <figcaption>
-                                  <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg" alt="profile-sample2" class="profile" /> -->
-                                  <h2>Front End Web Development<span>Skill Level: Beginner</span></h2>
-                                  <p><em>Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.</em>
-                                    <br><br>
-                                    <b>Duration :</b> 6 Days
-                                    <br> <br>
-                                    <b>Price :</b>R1800
-                                
-                                </p>
-                                <center><a class="add-to-cart follow" href="#" data-name="Beginner Front End Web Development" data-price="1800">Add To Cart</a></center>
-                                  <!-- <a href="#" class="info">More Info</a> -->
-                                </figcaption>
-                              </figure>
-                              <figure class="snip1336"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample69.jpg" alt="sample69" />
-                                <figcaption>
-                                  <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" /> -->
-                                  <h2> Python<span>Skill Level: Beginner</span></h2>
-                                  <p><em>Develop a basic proficiency in programming principles and methods in Python.</em>
-                                    <br><br>
-                                    <b>Duration :</b> 6 Days
-                                    <br> <br>
-                                    <b>Price :</b>R1800
-                                </p>
-                                <center><a class="add-to-cart follow" href="#" data-name="Beginner Python" data-price="1800">Add To Cart</a></center>
-                                  <!-- <a href="#" class="info">More Info</a> -->
-                                </figcaption>
-                              </figure>
-                            </div>
+                
 
-
-<br><br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br>
-      <br> <br>
-      <br>
-      <br> <br>
-      <br> <br>
-      <br>
-      <br> <br>
+                <!-- =============================================== -->
+                <!-- SUBSCRIBE SECTION -->
                 <section>
                         <div class="sub">
                             <div class="sub-text">
@@ -323,8 +369,18 @@
                             </div>
                         </div>
                     </section>
-                    <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+                    <!-- =============================================== -->
 
+
+                    
+                    <!-- =============================================== -->
+                    <!-- BACK TO TOP BUTTON -->
+                    <button class="pulse"><a href="#" id="back-to-top" title="Back to top" >&uarr;</a></button>
+                    <!-- =============================================== -->
+
+
+
+                    <!-- =============================================== -->
               <!-- FOOTER -->
               <footer class="footer">
                   <div class="col-1"><h3>Contact</h3>
@@ -354,6 +410,21 @@
                           <div class="tag"><p>Copyright &copy; 2018 | Privacy Policy  <span class="span"> Follow us  : <a href="https://www.facebook.com/code4ct/" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a>  <a href="https://twitter.com/code4ct?lang=en" target="_blank"><i class="fab fa-twitter" style="color: white;"></i></a>  <a href="https://plus.google.com/100829065774930869640" target="_blank"><i class="fab fa-google-plus-g" style="color: white;" ></i></a></span></p>
                               </div>
               </footer>
+              <!-- =============================================== -->
+
+
+
+              <!-- =============================================== -->
+                <!-- SNACKBAR -->
+                 <!-- The snackbar -->
+                <div id="snackbar">Your Item has been added to the cart <i class="fa fa-check" aria-hidden="true" style="color
+                    :rgb(26, 235, 26);"></i>
+                </div>
+                <!--  -->
+                <!-- =============================================== -->
+
+
+
             <!-- SCRIPT -->
 
             <script>
@@ -472,6 +543,13 @@ for (i = 0; i < acc.length; i++) {
 }
             
             </script>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                }
+                </script>
       
 </body>
 </html>

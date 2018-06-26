@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .header-about {
   width: 1515px;
@@ -674,111 +673,14 @@ textarea:hover {
   color: black;
 }
 
-.snip1336 {
-  font-family: 'Roboto', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #ffffff;
-  text-align: left;
-  line-height: 1.4em;
-  background-color: #141414;
-}
-
-.snip1336 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-.snip1336 img {
-  max-width: 100%;
-  vertical-align: top;
-  opacity: 0.85;
-}
-
-.snip1336 figcaption {
-  width: 100%;
-  background-color: #141414;
-  padding: 25px;
-  position: relative;
-}
-
-.snip1336 figcaption:before {
-  position: absolute;
-  content: '';
-  bottom: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 55px 0 0 400px;
-  border-color: transparent transparent transparent #141414;
-}
-
-.snip1336 figcaption a {
-  padding: 5px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  margin: 10px 0;
-  display: inline-block;
-  opacity: 0.65;
-  width: 47%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.snip1336 figcaption a:hover {
-  opacity: 1;
-}
-
-.snip1336 .profile {
-  border-radius: 50%;
-  position: absolute;
-  bottom: 100%;
-  left: 25px;
-  z-index: 1;
-  max-width: 90px;
-  opacity: 1;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.snip1336 .follow {
-  margin-right: 4%;
-  border-color: #eb0081;
-  color: #ffffff;
-}
-
-.snip1336 h2 {
-  margin: 0 0 5px;
-  font-weight: 300;
-}
-
-.snip1336 h2 span {
-  display: block;
-  font-size: 0.5em;
-  color: #2980b9;
-}
-
-.snip1336 p {
-  margin: 0 0 10px;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  opacity: 0.8;
-}
-
 #cart-container {
   position: sticky;
   top: 110px;
+  z-index: 0;
+  margin-left: 1100px;
+  border: white 1px solid;
+  width: 400px;
+  height: 400px;
 }
 
 * {
@@ -844,6 +746,218 @@ button.accordion:after {
 button.accordion.active:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #eb0276;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+#beginnerC {
+  margin-left: 1%;
+}
+
+#intro-code {
+  width: 400px;
+  height: 1125px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+#intro-code .intro-code_img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  margin-left: 100px;
+}
+
+#intro-code .intro-code1 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#intro-code .intro-code2 {
+  margin-top: 10px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#intro-code .intro-code3 {
+  margin-top: 10px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#intro-music {
+  width: 400px;
+  height: 800px;
+  border: 1px solid white;
+  margin-left: 30%;
+  margin-top: -75%;
+  text-align: center;
+}
+
+#intro-music .intro-music_img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  margin-left: 100px;
+}
+
+#intro-music .intro-music1 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#intro-music .intro-music2 {
+  margin-top: 10px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#intro-animate {
+  width: 400px;
+  height: 800px;
+  border: 1px solid white;
+  margin-left: 60%;
+  margin-top: -53.5%;
+  text-align: center;
+}
+
+#intro-animate .intro-animate_img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  margin-left: 100px;
+}
+
+#intro-animate .intro-animate1 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#intro-animate .intro-animate2 {
+  margin-top: 10px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+#beginCourse {
+  margin-top: 400px;
+  margin-left: 20px;
+}
+
+.begin-javascript1 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.begin-frontEnd1 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#begin-frontEnd {
+  margin-left: 460px;
+  margin-top: -31%;
+}
+
+#begin-frontEnd .begin-python_img {
+  text-align: center;
+}
+
+.begin-python1 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#begin-python {
+  margin-left: 930px;
+  margin-top: -31%;
 }
 
 #navigation-container {
@@ -941,6 +1055,7 @@ button.accordion.active:after {
 }
 
 .sub {
+  z-index: 999999999;
   width: 700px;
   height: 300px;
   text-align: center;
@@ -996,6 +1111,7 @@ button.accordion.active:after {
 }
 
 .footer {
+  z-index: 999999999;
   margin-top: 70px;
   width: 1510px;
   height: 350px;
