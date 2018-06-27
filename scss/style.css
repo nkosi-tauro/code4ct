@@ -964,6 +964,10 @@ button.accordion.active:after {
   text-align: center;
 }
 
+#inter-javascript {
+  margin-left: 20px;
+}
+
 .inter-websiteDeployment {
   width: 400px;
   height: 300px;
@@ -974,7 +978,58 @@ button.accordion.active:after {
 
 #inter-frontEnd {
   margin-left: 460px;
-  margin-top: -31%;
+  margin-top: -30.5%;
+}
+
+.innovChallenge1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#innovChallenge {
+  margin-left: 20px;
+}
+
+.codeStorm1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#codeStorm {
+  margin-left: 380px;
+  margin-top: -30.5%;
+}
+
+.Hackathon {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#hackathon {
+  margin-left: 760px;
+  margin-top: -30.5%;
+}
+
+.industryImmersion {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#industry_Immersion {
+  margin-left: 1160px;
+  margin-top: -30.5%;
 }
 
 #navigation-container {
