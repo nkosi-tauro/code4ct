@@ -415,7 +415,7 @@
                                     <p>Make informed decisions about your future studies. </p>
                                     <p><b>Duration:</b>1 Day<br>
                                         <b>Price:</b>R300</p>
-                                    <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Applying to Tertiary Studies" data-price="300"></center>
+                                    <center><input id="myBtn" onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Applying to Tertiary Studies" data-price="300"></center>
                             </div>
                         </div>
                 </div>
@@ -424,12 +424,19 @@
                     
                 <!-- =============================================== -->
 
-              
                     
+                    <section>
+                        <div id="prospectus">
+                            <center><a href="resource/2018 Course Prospectus.pdf" target="_blank"><button class='myButt3 four'><span>Download Our 2018 Course Prospectus</span></button></a></center>
+                            <center><h2 style="font-size: 3em;">Course Calendar</h2></center>
+                        </div>
+                    </section>
                 
                 <!-- =============================================== -->
                 <!-- CART CHECKOUT -->
-                <div id="cart-container">
+                <div id="myModal" class="modal">
+                <div id="cart-container modal-content">
+                        <span class="close">&times;</span>
                     <center><h2>Cart <i class="fas fa-cart-plus" style="color: rgb(175, 6, 90)"></i></h2></center>
                 <button id="clear-cart">Clear Cart</button>
                 <div>
@@ -440,12 +447,14 @@
                     <div>Total Cart:R<span id="total-cart"></span></div>
                 </div>
                 </div>
-                <!--  -->
+            </div>
+
+            <!--  -->
                 <!-- =============================================== -->
 
                 <br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br><br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br><br> <br>  <br>   <br>  <br> <br> <br> <br> <br> <br><br> <br>  <br>   <br>  
                 
-
+                
                 <!-- =============================================== -->
                 <!-- SUBSCRIBE SECTION -->
                 <section>
@@ -642,6 +651,33 @@ for (i = 0; i < acc.length; i++) {
                     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
                 }
                 </script>
+                <script>
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>
       
 </body>
 </html>

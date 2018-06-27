@@ -24,7 +24,7 @@
   height: 500px;
   margin-top: -100%;
   margin-left: 110%;
-  border: 1px solid black;
+  border: 1px solid white;
   background-image: url(../images/about5.jpg);
   background-size: cover;
 }
@@ -683,6 +683,32 @@ textarea:hover {
   height: 400px;
 }
 
+.plus-item, .subtract-item, .delete-item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.plus-item {
+  background-color: #19f819;
+}
+
+.subtract-item {
+  background-color: #f3cf00;
+}
+
+.delete-item {
+  background-color: #ee0303;
+}
+
+#clear-cart
+.item-count {
+  color: white;
+}
+
 * {
   font-family: "Raleway", helvetica, sans-serif;
 }
@@ -1030,6 +1056,71 @@ button.accordion.active:after {
 #industry_Immersion {
   margin-left: 1160px;
   margin-top: -30.5%;
+}
+
+#prospectus {
+  margin-top: 200px;
+}
+
+.mybutt3 {
+  outline: none;
+  border: none;
+  padding: 15px;
+  display: block;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  background-color: #817e7e;
+  border: 2px solid #0eb1f1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 400px;
+  top: 50;
+  width: 50%;
+  /* Full width */
+  height: 50%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  color: white;
+  background-color: #b10185;
+  /* Fallback color */
+  border-radius: 5px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #navigation-container {
@@ -1639,7 +1730,7 @@ img {
 .images {
   width: 600px;
   height: 500px;
-  margin-top: -120%;
+  margin-top: -100%;
   margin-left: 110%;
 }
 

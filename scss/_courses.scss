@@ -18,10 +18,32 @@
   width: 400px;
   height: 400px;
 }
-.item-count{
-  // margin-right: 40px;
+
+
+////////CART BUTTONS
+
+.plus-item, .subtract-item, .delete-item,{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
-  
+.plus-item{
+  background-color: rgb(25, 248, 25);
+}
+.subtract-item{
+  background-color: rgb(243, 207, 0);
+}
+.delete-item{
+  background-color: rgb(238, 3, 3);
+}
+
+#clear-cart
+.item-count{
+  color: white;
+}
 ///////////////////////////ACCORDION///////////////
 * {
 	font-family: "Raleway", helvetica, sans-serif;
@@ -139,7 +161,6 @@ button.accordion.active:after {
 /////////////////////////////////////CARDS//////////////////////////////////////////////////
 #beginnerC{
   margin-left: 1%;
-
 }
 
 #intro-code{
@@ -244,9 +265,7 @@ text-align: center;
   box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
   text-align: center;
 }
-#begin-javascript{
- 
-}
+
 
 .begin-frontEnd1{
   width: 400px;
@@ -343,3 +362,54 @@ text-align: center;
   margin-top: -30.5%;
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#prospectus{
+  margin-top: 200px;
+}
+.mybutt3{
+  @include main-button;
+	background-color:rgb(129, 126, 126);
+  border:2px solid rgb(14, 177, 241);
+	
+}
+//////////////////////////////////////////////////////////////////
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 400px;
+  top: 50;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  color: white;
+  background-color: rgb(177, 1, 133); /* Fallback color */
+  // background-color: rgba(255, 255, 255); /* Black w/ opacity */
+  border-radius: 5px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
