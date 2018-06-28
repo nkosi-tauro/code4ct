@@ -178,7 +178,16 @@
 
             <!-- =============================================== -->
                 <!-- INTRODUCTORY -->
-        
+
+                 <!-- CART BOX -->
+                 <div id="btn-box">
+                        <input id="myBtn"  onclick="myFunction()" id="submit" type="submit" class='myButt4 contact four  follow' value="Open Cart"  >
+
+                    </div>
+                    <!--  -->
+
+         
+
                 <div  id="beginnerC" >
                         <center><h2 style="font-size: 2em">Introductory Coding Courses</h2></center>
                 <div id="intro-code">
@@ -188,14 +197,14 @@
                         <p>Code a simple one-page website using HTML and JQuery.</p>
                         <p><b>Duration:</b>3 hours <br>
                             <b>Price:</b>R250</p>
-                            <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Coding: Web Pages" data-price="5600"></center>
+                            <center><input  onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Coding: Web Pages" data-price="5600"></center>
                     </div>
                     <div class="intro-code2">
                             <h2> Create with Code: Web Pages</h2>
                             <p>Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</p>
                             <p><b>Duration:</b>3 hours <br>
                                 <b>Price:</b>R960</p>
-                                <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name=" Create with Code: Web Pages" data-price="960"></center>
+                                <center><input  onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name=" Create with Code: Web Pages" data-price="960"></center>
                     </div>
                     <div class="intro-code3">
                             <h2>
@@ -410,12 +419,13 @@
                                         <b>Price:</b>R300</p>
                                     <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="CV & LinkedIn" data-price="300"></center>
                             </div>
+                            <!--  -->
                             <div class="intro-animate2">
                                     <h2>Applying to Tertiary Studies</h2>
                                     <p>Make informed decisions about your future studies. </p>
                                     <p><b>Duration:</b>1 Day<br>
                                         <b>Price:</b>R300</p>
-                                    <center><input id="myBtn" onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Applying to Tertiary Studies" data-price="300"></center>
+                                    <center><input onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Applying to Tertiary Studies" data-price="300"></center>
                             </div>
                         </div>
                 </div>
@@ -433,9 +443,12 @@
                     </section>
                 
                 <!-- =============================================== -->
+
+                <!-- CART ITEMS -->
+
                 <!-- CART CHECKOUT -->
-                <div id="myModal" class="modal">
-                <div id="cart-container modal-content">
+                <div id="myModal" class="modal1">
+                <div id="cart-container modal-content1">
                         <span class="close">&times;</span>
                     <center><h2>Cart <i class="fas fa-cart-plus" style="color: rgb(175, 6, 90)"></i></h2></center>
                 <button id="clear-cart">Clear Cart</button>
@@ -448,6 +461,8 @@
                 </div>
                 </div>
             </div>
+
+                  
 
             <!--  -->
                 <!-- =============================================== -->
@@ -484,14 +499,14 @@
                     <!-- =============================================== -->
               <!-- FOOTER -->
               <footer class="footer">
-                  <div class="col-1"><h3>Contact</h3>
+                  <div class="coll-1"><h3>Contact</h3>
                       <ul>
                           <li><i class="fas fa-phone-square fa-2x"  style="color: hotpink;"></i>&nbsp +(021) 685 0991</li>
                           <li><i class="far fa-envelope fa-2x"  style="color: hotpink;"></i>&nbsp info@code4ct.com</li>
                           <li><i class="fas fa-map-marker-alt fa-2x"  style="color: hotpink;"></i>&nbsp Innovate South Africa, 403 Old Castle Brewery, 6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBeach Rd, Woodstock, Cape Town, 7915</li>
                       </ul>
                   </div>
-                  <div class="col-2"><h3>Company</h3>
+                  <div class="coll-2"><h3>Company</h3>
                       <ul>
                           <li><a href="about.html">About us</a></li>
                           <li><a href="contact.html">Contact us</a></li>
@@ -500,7 +515,7 @@
                           <li><a href="#">Affiliate program</a></li>
                       </ul>
                       </div>
-                      <div class="col-3"><h3>Help & Support</h3>
+                      <div class="coll-3"><h3>Help & Support</h3>
                               <ul>
                                       <li><a href="#">Help Center</a></li>
                                       <li><a href="#">Free simple template</a></li>
@@ -520,6 +535,7 @@
                  <!-- The snackbar -->
                 <div id="snackbar">Your Item has been added to the cart <i class="fa fa-check" aria-hidden="true" style="color
                     :rgb(26, 235, 26);"></i>
+                    
                 </div>
                 <!--  -->
                 <!-- =============================================== -->
@@ -672,6 +688,7 @@ for (i = 0; i < acc.length; i++) {
                         }
                         
                         // When the user clicks anywhere outside of the modal, close it
+                        ////Coded by Nkosi
                         window.onclick = function(event) {
                             if (event.target == modal) {
                                 modal.style.display = "none";
