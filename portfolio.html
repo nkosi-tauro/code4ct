@@ -6,23 +6,21 @@
     <title>Code4ct</title>
     <link rel="icon" href="images/Favicon_Code4CT-150x150.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
     <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
     <!--  -->
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <script src="js/index.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+    <!--  -->
 
 </head>
 <body>
+    <!-- NAVIGATION -->
         <div class="navigation-bar">
                 <div id="navigation-container ">
                   <a href="index.html"><img src="images/code4ct-logo.jpg"></a>
@@ -65,6 +63,12 @@
                     <p>fddddddddddddd</p>
                 </div>
 
+                <!-- CART BOX -->
+                <div id="btn-box">
+                        <h2  id="myBtn"  onclick="myFunction()" style="margin-left: 135px;"><span style="color: gold;">Open Cart</span> &nbsp<br><i class="fas fa-cart-plus fa-1x" style="color: rgb(248, 20, 134)"></i></h2>
+
+                    </div>
+                    <!--  -->
 
                 <!-- FIRST GALLERY -->
                 <div class="container" id="fancy">
@@ -188,6 +192,23 @@
                         </center>
                             <!--  -->
 
+                            <!-- CART -->
+    <!-- CART CHECKOUT -->
+    <div id="myModal" class="modal1">
+            <div id="cart-container modal-content1">
+                    <span class="close">&times;</span>
+                <center><h2>Cart <i class="fas fa-cart-plus" style="color: rgb(175, 6, 90)"></i></h2></center>
+            <button id="clear-cart">Clear Cart</button>
+            <div>
+                <ul id="show-cart">
+                    <li>???????</li>
+                </ul>
+                <div>You have <span id="count-cart">X</span> items in your cart</div>
+                <div>Total Cart:R<span id="total-cart"></span></div>
+            </div>
+            </div>
+        </div>
+
 
                     <br>
                     <br>
@@ -272,23 +293,23 @@
                           <div class="tag"><p>Copyright &copy; 2018 | Privacy Policy  <span class="span"> Follow us  : <a href="https://www.facebook.com/code4ct/" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a>  <a href="https://twitter.com/code4ct?lang=en" target="_blank"><i class="fab fa-twitter" style="color: white;"></i></a>  <a href="https://plus.google.com/100829065774930869640" target="_blank"><i class="fab fa-google-plus-g" style="color: white;" ></i></a></span></p>
                               </div>
               </footer>
-            <!-- SCRIPT -->
 
 
-            <script>
-                    var elem = document.querySelector('.m-p-g');
-                
-                    document.addEventListener('DOMContentLoaded', function() {
-                        var gallery = new MaterialPhotoGallery(elem);
-                    });
-                </script>
-     <script>
-            var elem = document.querySelector('.m-p-g2');
-        
-            document.addEventListener('DOMContentLoaded', function() {
-                var gallery = new MaterialPhotoGallery2(elem);
-            });
-        </script>
+
+
+
+
+
+
+ 
+    <!-- SCRIPT -->
+    <script src="js/index.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+    <!--  -->
+            
+
                 
             <script>
                 if ($('#back-to-top').length) {
@@ -345,6 +366,134 @@
   $(this).ekkoLightbox();
 });
         </script>
+         <!-- CART AND MODAL SCRIPT -->
+         <script>
+           
+                $(".add-to-cart").click(function(event){
+                     event.preventDefault();
+                     var name = $(this).attr("data-name");
+                     var price = Number($(this).attr("data-price"));
+     
+                     shoppingCart.addItemToCart(name, price, 1);
+                     displayCart();
+                 });
+     
+                 $("#clear-cart").click(function(event){
+                     shoppingCart.clearCart();
+                     displayCart();
+                 });
+     
+                 function displayCart() {
+                     var cartArray = shoppingCart.listCart();
+                     console.log(cartArray);
+                     var output = "";
+     
+                     for (var i in cartArray) {
+                         output += "<div>"
+                             +cartArray[i].name
+                             +" <input class='item-count' type='number' data-name='"
+                             +cartArray[i].name
+                             +"' value='"+cartArray[i].count+"' >"
+                             +" x "+cartArray[i].price
+                             +" = "+cartArray[i].total
+                             +" <button class='plus-item' data-name='"
+                             +cartArray[i].name+"'>+</button>"
+                             +" <button class='subtract-item' data-name='"
+                             +cartArray[i].name+"'>-</button>"
+                             +" <button class='delete-item' data-name='"
+                             +cartArray[i].name+"'>X</button>"
+                             +"</div>";
+                     }
+     
+                     $("#show-cart").html(output);
+                     $("#count-cart").html( shoppingCart.countCart() );
+                     $("#total-cart").html( shoppingCart.totalCart() );
+                 }
+     
+                 $("#show-cart").on("click", ".delete-item", function(event){
+                     var name = $(this).attr("data-name");
+                     shoppingCart.removeItemFromCartAll(name);
+                     displayCart();
+                 });
+     
+                 $("#show-cart").on("click", ".subtract-item", function(event){
+                     var name = $(this).attr("data-name");
+                     shoppingCart.removeItemFromCart(name);
+                     displayCart();
+                 });
+     
+                 $("#show-cart").on("click", ".plus-item", function(event){
+                     var name = $(this).attr("data-name");
+                     shoppingCart.addItemToCart(name, 0, 1);
+                     displayCart();
+                 });
+     
+                 $("#show-cart").on("change", ".item-count", function(event){
+                     var name = $(this).attr("data-name");
+                     var count = Number($(this).val());
+                     shoppingCart.setCountForItem(name, count);
+                     displayCart();
+                 });
+     
+     
+                 displayCart();
+                 </script>
+                 <script>
+     $(".hover").mouseleave(
+       function () {
+         $(this).removeClass("hover");
+       }
+     );
+     
+                 </script>
+                 <script>
+                 /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+     var acc = document.getElementsByClassName("accordion");
+     var i;
+     
+     for (i = 0; i < acc.length; i++) {
+         acc[i].onclick = function(){
+             this.classList.toggle("active");
+             this.nextElementSibling.classList.toggle("show");
+         }
+     }
+                 
+                 </script>
+                 <script>
+                     function myFunction() {
+                         var x = document.getElementById("snackbar");
+                         x.className = "show";
+                         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                     }
+                     </script>
+                     <script>
+                             // Get the modal
+                             var modal = document.getElementById('myModal');
+                             
+                             // Get the button that opens the modal
+                             var btn = document.getElementById("myBtn");
+                             
+                             // Get the <span> element that closes the modal
+                             var span = document.getElementsByClassName("close")[0];
+                             
+                             // When the user clicks the button, open the modal 
+                             btn.onclick = function() {
+                                 modal.style.display = "block";
+                             }
+                             
+                             // When the user clicks on <span> (x), close the modal
+                             span.onclick = function() {
+                                 modal.style.display = "none";
+                             }
+                             
+                             // When the user clicks anywhere outside of the modal, close it
+                             ////Coded by Nkosi
+                             window.onclick = function(event) {
+                                 if (event.target == modal) {
+                                     modal.style.display = "none";
+                                 }
+                             }
+                             </script>
         
         
 </body>

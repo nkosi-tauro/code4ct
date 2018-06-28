@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="js/index.js"></script>
+    <script src="js/courses.js"></script>
+
 </head>
 <body>
         <div class="navigation-bar">
@@ -49,6 +51,12 @@
                     <h1>About Us</h1>
                     <h3><a href="index.html"><span class="h3-about-span"> Home</span></a> &rarr;  <a href="about.html">About US</a> </h3>
                 </header>
+
+                  <!-- CART BOX -->
+                  <div id="btn-box">
+                        <h2  id="myBtn"  onclick="myFunction()" style="margin-left: 135px;"><span style="color: gold;">Open Cart</span> &nbsp<br><i class="fas fa-cart-plus fa-2x" style="color: rgb(248, 20, 134)"></i></h2>
+                    </div>
+                    <!--  -->
 
                 <!-- WELCOME SECTION -->
                 <!-- About us -->
@@ -156,6 +164,21 @@
 <br><br><br><br><br>
 
 <!-- CART -->
+    <!-- CART CHECKOUT -->
+    <div id="myModal" class="modal1">
+            <div id="cart-container modal-content1">
+                    <span class="close">&times;</span>
+                <center><h2>Cart <i class="fas fa-cart-plus" style="color: rgb(175, 6, 90)"></i></h2></center>
+            <button id="clear-cart">Clear Cart</button>
+            <div>
+                <ul id="show-cart">
+                    <li>???????</li>
+                </ul>
+                <div>You have <span id="count-cart">X</span> items in your cart</div>
+                <div>Total Cart:R<span id="total-cart"></span></div>
+            </div>
+            </div>
+        </div>
 
 
              <!-- SUBSCRIBE SECTION -->
@@ -322,5 +345,134 @@
   
  });
                 </script>
+
+                <!-- CART AND MODAL SCRIPT -->
+                     <script>
+           
+                            $(".add-to-cart").click(function(event){
+                                 event.preventDefault();
+                                 var name = $(this).attr("data-name");
+                                 var price = Number($(this).attr("data-price"));
+                 
+                                 shoppingCart.addItemToCart(name, price, 1);
+                                 displayCart();
+                             });
+                 
+                             $("#clear-cart").click(function(event){
+                                 shoppingCart.clearCart();
+                                 displayCart();
+                             });
+                 
+                             function displayCart() {
+                                 var cartArray = shoppingCart.listCart();
+                                 console.log(cartArray);
+                                 var output = "";
+                 
+                                 for (var i in cartArray) {
+                                     output += "<div>"
+                                         +cartArray[i].name
+                                         +" <input class='item-count' type='number' data-name='"
+                                         +cartArray[i].name
+                                         +"' value='"+cartArray[i].count+"' >"
+                                         +" x "+cartArray[i].price
+                                         +" = "+cartArray[i].total
+                                         +" <button class='plus-item' data-name='"
+                                         +cartArray[i].name+"'>+</button>"
+                                         +" <button class='subtract-item' data-name='"
+                                         +cartArray[i].name+"'>-</button>"
+                                         +" <button class='delete-item' data-name='"
+                                         +cartArray[i].name+"'>X</button>"
+                                         +"</div>";
+                                 }
+                 
+                                 $("#show-cart").html(output);
+                                 $("#count-cart").html( shoppingCart.countCart() );
+                                 $("#total-cart").html( shoppingCart.totalCart() );
+                             }
+                 
+                             $("#show-cart").on("click", ".delete-item", function(event){
+                                 var name = $(this).attr("data-name");
+                                 shoppingCart.removeItemFromCartAll(name);
+                                 displayCart();
+                             });
+                 
+                             $("#show-cart").on("click", ".subtract-item", function(event){
+                                 var name = $(this).attr("data-name");
+                                 shoppingCart.removeItemFromCart(name);
+                                 displayCart();
+                             });
+                 
+                             $("#show-cart").on("click", ".plus-item", function(event){
+                                 var name = $(this).attr("data-name");
+                                 shoppingCart.addItemToCart(name, 0, 1);
+                                 displayCart();
+                             });
+                 
+                             $("#show-cart").on("change", ".item-count", function(event){
+                                 var name = $(this).attr("data-name");
+                                 var count = Number($(this).val());
+                                 shoppingCart.setCountForItem(name, count);
+                                 displayCart();
+                             });
+                 
+                 
+                             displayCart();
+                             </script>
+                             <script>
+                 $(".hover").mouseleave(
+                   function () {
+                     $(this).removeClass("hover");
+                   }
+                 );
+                 
+                             </script>
+                             <script>
+                             /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+                 var acc = document.getElementsByClassName("accordion");
+                 var i;
+                 
+                 for (i = 0; i < acc.length; i++) {
+                     acc[i].onclick = function(){
+                         this.classList.toggle("active");
+                         this.nextElementSibling.classList.toggle("show");
+                     }
+                 }
+                             
+                             </script>
+                             <script>
+                                 function myFunction() {
+                                     var x = document.getElementById("snackbar");
+                                     x.className = "show";
+                                     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                                 }
+                                 </script>
+                                 <script>
+                                         // Get the modal
+                                         var modal = document.getElementById('myModal');
+                                         
+                                         // Get the button that opens the modal
+                                         var btn = document.getElementById("myBtn");
+                                         
+                                         // Get the <span> element that closes the modal
+                                         var span = document.getElementsByClassName("close")[0];
+                                         
+                                         // When the user clicks the button, open the modal 
+                                         btn.onclick = function() {
+                                             modal.style.display = "block";
+                                         }
+                                         
+                                         // When the user clicks on <span> (x), close the modal
+                                         span.onclick = function() {
+                                             modal.style.display = "none";
+                                         }
+                                         
+                                         // When the user clicks anywhere outside of the modal, close it
+                                         ////Coded by Nkosi
+                                         window.onclick = function(event) {
+                                             if (event.target == modal) {
+                                                 modal.style.display = "none";
+                                             }
+                                         }
+                                         </script>
 </body>
 </html>

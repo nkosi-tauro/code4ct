@@ -169,6 +169,16 @@
   line-height: 20px;
 }
 
+.navigation-bar2 {
+  background-color: #fdfdfd;
+  height: 70px;
+  text-align: center;
+  padding: 60px;
+  position: sticky;
+  top: 1px;
+  z-index: 999;
+}
+
 .header-portfolio {
   width: 1515px;
   height: 200px;
@@ -211,7 +221,7 @@
   height: 30px;
   padding: 0px;
   margin: 0px;
-  border: 1px black;
+  border: 1px black solid;
 }
 
 @media screen and (max-width: 640px) {
@@ -911,6 +921,8 @@ button.accordion.active:after {
 
 #prospectus {
   margin-top: 200px;
+  background-color: #f2f2f2;
+  padding: 50px;
 }
 
 .mybutt3 {
