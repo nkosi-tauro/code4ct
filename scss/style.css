@@ -57,28 +57,31 @@
 }
 
 .whoWeAre .whoWeAre-des .vision {
-  width: 380px;
+  width: 350px;
   height: 200px;
   border: #ffffff 1px solid;
+  text-align: center;
 }
 
 .whoWeAre .whoWeAre-des .mission {
-  width: 380px;
+  width: 350px;
   height: 200px;
   border: #ffffff 1px solid;
+  text-align: center;
 }
 
 .whoWeAre .whoWeAre-des .help {
-  width: 380px;
+  width: 350px;
   height: 200px;
   border: #ffffff 1px solid;
   margin-top: -52%;
-  margin-left: 382px;
+  margin-left: 370px;
+  text-align: center;
 }
 
 .whoWeAre .whoWeAre-des .support {
-  width: 380px;
-  height: 200px;
+  width: 350px;
+  height: 300px;
   border: #ffffff 1px solid;
   margin-left: 382px;
 }
@@ -194,11 +197,11 @@
 }
 
 .row {
-  margin: 5px;
+  margin: 0px;
 }
 
-.container {
-  background-color: #f164c2;
+.container-flush {
+  background-color: aliceblue;
 }
 
 #bank, #3rdGallery {
@@ -212,6 +215,11 @@
   padding: 0px;
   margin: 0px;
   border: 1px black solid;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 640px) {
@@ -1214,14 +1222,6 @@ button.accordion.active:after {
   cursor: pointer;
   cursor: hand;
   border: 0px;
-}
-
-#car-block1 {
-  width: 200px;
-  height: 300px;
-  margin-top: -100px;
-  background-color: #bd3b3b;
-  z-index: 9999999;
 }
 
 .footer {

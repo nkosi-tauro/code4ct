@@ -14,12 +14,14 @@
     text-align: center;
   }
   .row {
-    margin: 5px;
+    margin: 0px;
   }
-  .container{
-      background-color: rgb(241, 100, 194);
+  .container-flush{
+    background-color: aliceblue;
   }
-  #bank, #3rdGallery {display:none;}
+  #bank, #3rdGallery {
+    display:none;
+  }
 
   .gbtn{
     position: relative;
@@ -29,3 +31,9 @@
     margin: 0px;
     border: 1px black solid;
   }
+
+  .no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
