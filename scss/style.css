@@ -334,7 +334,7 @@
 }
 
 .form-section h1 {
-  margin-left: 90px;
+  margin-left: 100px;
 }
 
 .form-section .form-block {
@@ -348,7 +348,7 @@
   height: 600px;
   border: #fff 1px solid;
   margin-top: -40%;
-  margin-left: 66%;
+  margin-left: 63%;
 }
 
 .form-section .contact-details h1, .form-section .contact-details p {
@@ -503,7 +503,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 
 #form {
   position: relative;
-  margin-left: 90px;
+  margin-left: 100px;
 }
 
 input {
